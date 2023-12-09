@@ -1,0 +1,15 @@
+C:\repos\offside\ConsoleApp1\ConsoleApp3B\bin\Debug\net6.0\ConsoleApp3B.exe
+C:\repos\offside\ConsoleApp1\ConsoleApp3B\bin\Debug\net6.0\ConsoleApp3B.deps.json
+C:\repos\offside\ConsoleApp1\ConsoleApp3B\bin\Debug\net6.0\ConsoleApp3B.runtimeconfig.json
+C:\repos\offside\ConsoleApp1\ConsoleApp3B\bin\Debug\net6.0\ConsoleApp3B.dll
+C:\repos\offside\ConsoleApp1\ConsoleApp3B\bin\Debug\net6.0\ConsoleApp3B.pdb
+C:\repos\offside\ConsoleApp1\ConsoleApp3B\obj\Debug\net6.0\ConsoleApp3B.csproj.AssemblyReference.cache
+C:\repos\offside\ConsoleApp1\ConsoleApp3B\obj\Debug\net6.0\ConsoleApp3B.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\offside\ConsoleApp1\ConsoleApp3B\obj\Debug\net6.0\ConsoleApp3B.AssemblyInfoInputs.cache
+C:\repos\offside\ConsoleApp1\ConsoleApp3B\obj\Debug\net6.0\ConsoleApp3B.AssemblyInfo.cs
+C:\repos\offside\ConsoleApp1\ConsoleApp3B\obj\Debug\net6.0\ConsoleApp3B.csproj.CoreCompileInputs.cache
+C:\repos\offside\ConsoleApp1\ConsoleApp3B\obj\Debug\net6.0\ConsoleApp3B.dll
+C:\repos\offside\ConsoleApp1\ConsoleApp3B\obj\Debug\net6.0\refint\ConsoleApp3B.dll
+C:\repos\offside\ConsoleApp1\ConsoleApp3B\obj\Debug\net6.0\ConsoleApp3B.pdb
+C:\repos\offside\ConsoleApp1\ConsoleApp3B\obj\Debug\net6.0\ConsoleApp3B.genruntimeconfig.cache
+C:\repos\offside\ConsoleApp1\ConsoleApp3B\obj\Debug\net6.0\ref\ConsoleApp3B.dll
