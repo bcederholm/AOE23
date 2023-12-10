@@ -1,14 +1,20 @@
-﻿const string filePath1 = "C:\\repos\\offside\\ConsoleApp01\\ConsoleApp07A\\Input7.txt";
+﻿/*
+ * FileName: Program.cs
+ * Author: Benjamin Cederholm
+ * Date Created: 2023-10-07
+ * Last Modified: 2023-12-10
+ * Description: https://adventofcode.com/2023/day/7 - Part Two
+ * Keywords: Jokers, Recursive
+ */
+
+const string filePath1 = "input.txt";
 var lines1 = File.ReadAllLines(filePath1);
-var evaluator = new PokerHandEvaluator();
 var hands = new List<Hand>();
 
 foreach (var line in lines1)
 {
     var lineSegments = line.Split(" ", StringSplitOptions.RemoveEmptyEntries);
-
-    var originalString = lineSegments[0];
-
+    
     lineSegments[0] = lineSegments[0].Replace('J', '0');
     lineSegments[0] = lineSegments[0].Replace('2', 'a');
     lineSegments[0] = lineSegments[0].Replace('3', 'b');
@@ -23,40 +29,36 @@ foreach (var line in lines1)
     lineSegments[0] = lineSegments[0].Replace('K', 'k');
     lineSegments[0] = lineSegments[0].Replace('A', 'l');
 
-    hands.Add(new Hand()
+    hands.Add(new Hand
     {
-        OriginalString = originalString,
         ValueString = lineSegments[0],
-        Cards = lineSegments[0].ToCharArray(),
         Bid = Convert.ToInt32(lineSegments[1]),
-        Value = evaluator.EvaluateHandWrapper(lineSegments[0].ToCharArray()),
+        Value = PokerHandEvaluator.EvaluateHandWrapper(lineSegments[0].ToCharArray())
     });
 }
 
 var sortedHands = hands.OrderBy(h => h.Value).ThenBy(h => h.ValueString);
 
 var rankNumber = 0;
+var totalWinnings = 0;
 foreach (var hand in sortedHands)
 {
     rankNumber++;
     hand.Winning = hand.Bid * rankNumber;
+    totalWinnings += hand.Winning;
 }
 
-var totalWinnings = sortedHands.Sum(h => h.Winning);
+Console.WriteLine($"Answer: {totalWinnings}");
 
-Console.WriteLine($"totalWinnings: {totalWinnings}");
-
-public class Hand
+internal class Hand
 {
-    public string OriginalString { get; set; }
-    public string ValueString { get; set; }
-    public char[] Cards { get; set; }
-    public int Bid { get; set; }
-    public PokerHandEvaluator.HandRank Value { get; set; }
+    public string? ValueString { get; init; }
+    public int Bid { get; init; }
+    public PokerHandEvaluator.HandRank Value { get; init; }
     public int Winning { get; set; }
 }
 
-public class PokerHandEvaluator
+internal static class PokerHandEvaluator
 {
     public enum HandRank
     { 
@@ -67,12 +69,10 @@ public class PokerHandEvaluator
         ThreeOfAKind,
         FullHouse,
         FourOfAKind,
-        FiveOfAKind,
+        FiveOfAKind
     }
-
     
-    
-    public List<string> MatrixRecursive(string wip, int deep)
+    private static IEnumerable<string> MatrixRecursive(string wip, int deep)
     {
         Console.WriteLine($"{wip} at deep {deep}");
         
@@ -90,7 +90,7 @@ public class PokerHandEvaluator
         return returnList;
     }
     
-    public HandRank EvaluateHandWrapper(char[] hand)
+    public static HandRank EvaluateHandWrapper(char[] hand)
     {
         // Identify how many jokers are in the hand
         var jokerCount = hand.Count(c => c == '0');
@@ -105,19 +105,17 @@ public class PokerHandEvaluator
         var matrixRecursive = MatrixRecursive(realCards, jokerCount);
 
         var maxRank = HandRank.None;
-        foreach (var combination in matrixRecursive)
+        foreach (var currentRank in matrixRecursive
+                     .Select(combination => EvaluateHand(combination.ToCharArray()))
+                     .Where(currentRank => currentRank > maxRank))
         {
-            var currentRank = EvaluateHand(combination.ToCharArray());
-            if (currentRank > maxRank)
-            {
-                maxRank = currentRank;
-            }
+            maxRank = currentRank;
         }
         
         return maxRank;
     }
 
-    public HandRank EvaluateHand(char[] hand)
+    private static HandRank EvaluateHand(char[] hand)
     {
         if (IsFiveOfAKind(hand)) return HandRank.FiveOfAKind;
         if (IsFourOfAKind(hand)) return HandRank.FourOfAKind;
@@ -127,37 +125,38 @@ public class PokerHandEvaluator
         return IsOnePair(hand) ? HandRank.OnePair : HandRank.HighCard;
     }
 
-    private static bool IsFiveOfAKind(char[] hand)
+    private static bool IsFiveOfAKind(IEnumerable<char> hand)
     {
         var rankGroups = hand.GroupBy(card => card);
         return rankGroups.Any(group => group.Count() == 5);
     }
     
-    private static bool IsFourOfAKind(char[] hand)
+    private static bool IsFourOfAKind(IEnumerable<char> hand)
     {
         var rankGroups = hand.GroupBy(card => card);
         return rankGroups.Any(group => group.Count() == 4);
     }
 
-    private static bool IsFullHouse(char[] hand)
+    private static bool IsFullHouse(IEnumerable<char> hand)
     {
         var rankGroups = hand.GroupBy(card => card);
-        return rankGroups.Any(group => group.Count() == 3) && rankGroups.Any(group => group.Count() == 2);
+        var enumerable = rankGroups as IGrouping<char, char>[] ?? rankGroups.ToArray();
+        return enumerable.Any(group => group.Count() == 3) && enumerable.Any(group => group.Count() == 2);
     }
 
-    private static bool IsThreeOfAKind(char[] hand)
+    private static bool IsThreeOfAKind(IEnumerable<char> hand)
     {
         var rankGroups = hand.GroupBy(card => card);
         return rankGroups.Any(group => group.Count() == 3);
     }
 
-    private static bool IsTwoPair(char[] hand)
+    private static bool IsTwoPair(IEnumerable<char> hand)
     {
         var rankGroups = hand.GroupBy(card => card);
         return rankGroups.Count(group => group.Count() == 2) == 2;
     }
 
-    private static bool IsOnePair(char[] hand)
+    private static bool IsOnePair(IEnumerable<char> hand)
     {
         var rankGroups = hand.GroupBy(card => card);
         return rankGroups.Any(group => group.Count() == 2);
