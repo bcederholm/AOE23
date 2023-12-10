@@ -1,29 +1,28 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿/*
+ * FileName: Program.cs
+ * Author: Benjamin Cederholm
+ * Date Created: 2023-10-03
+ * Last Modified: 2023-12-10
+ * Description: https://adventofcode.com/2023/day/3 - Part Two
+ * Lessons learned: Linq is nice
+ */
 
-Console.WriteLine("Hello, World!");
-List<Connection> connections = new List<Connection>();
+var connections = new List<Connection>();
 
-string filePath = "C:\\repos\\offside\\ConsoleApp01\\ConsoleApp03B\\Input3.txt";
-string[] lines = File.ReadAllLines(filePath);
-
-string previousLine;
-string currentLine;
-string nextLine;
+const string filePath = "input.txt";
+var lines = File.ReadAllLines(filePath);
 
 var firstPos = -1;
 var lastPos = -1;
 
-int linenumber = 1;
-
-for (int i = 0; i < lines.Length; i++)
+for (var i = 0; i < lines.Length; i++)
 {
-    previousLine = i > 0 ? lines[i - 1] : "";
-    currentLine = lines[i];
-    nextLine = i < lines.Length - 1 ? lines[i + 1] : "";
+    var previousLine = i > 0 ? lines[i - 1] : "";
+    var currentLine = lines[i];
+    var nextLine = i < lines.Length - 1 ? lines[i + 1] : "";
     
-    for (int p = 0; p <= currentLine.Length - 1; p++)
+    for (var p = 0; p <= currentLine.Length - 1; p++)
     {
-        
         if (firstPos == -1 && char.IsNumber(currentLine[p]))
         {
             firstPos = p;
@@ -44,18 +43,16 @@ for (int i = 0; i < lines.Length; i++)
         
         if (firstPos != -1 && lastPos != -1)
         {
-            
             var number = currentLine.Substring(firstPos, lastPos - firstPos + 1);
-            var found = false;
 
             // Check previous line
             if (previousLine != "")
             {
-                for (int pl = (firstPos == 0 ? firstPos : firstPos - 1); pl <= (lastPos == currentLine.Length - 1 ? lastPos : lastPos + 1); pl++)
+                for (var pl = firstPos == 0 ? firstPos : firstPos - 1; pl <= (lastPos == currentLine.Length - 1 ? lastPos : lastPos + 1); pl++)
                 {
                     if (previousLine[pl] == '*')
                     {
-                        connections.Add(new Connection() { Line = i - 1, Position = pl, Number = int.Parse(number) });
+                        connections.Add(new Connection { Line = i - 1, Position = pl, Number = int.Parse(number) });
                     }
                 }
             }
@@ -66,7 +63,7 @@ for (int i = 0; i < lines.Length; i++)
                 var characterBefore = currentLine[firstPos - 1];
                 if (characterBefore == '*')
                 {
-                    connections.Add(new Connection() { Line = i, Position = firstPos - 1, Number = int.Parse(number) });
+                    connections.Add(new Connection { Line = i, Position = firstPos - 1, Number = int.Parse(number) });
                 }
             }
 
@@ -76,18 +73,18 @@ for (int i = 0; i < lines.Length; i++)
                 var characterAfter = currentLine[lastPos + 1];
                 if (characterAfter == '*')
                 {
-                    connections.Add(new Connection() { Line = i, Position = lastPos + 1, Number = int.Parse(number) });
+                    connections.Add(new Connection { Line = i, Position = lastPos + 1, Number = int.Parse(number) });
                 }
             }
 
             // Check next line
             if (nextLine != "")
             {
-                for (int np = (firstPos == 0 ? firstPos : firstPos - 1); np <= (lastPos == currentLine.Length - 1 ? lastPos : lastPos + 1); np++)
+                for (var np = firstPos == 0 ? firstPos : firstPos - 1; np <= (lastPos == currentLine.Length - 1 ? lastPos : lastPos + 1); np++)
                 {
                     if (nextLine[np] == '*')
                     {
-                        connections.Add(new Connection() { Line = i + 1, Position = np, Number = int.Parse(number) });
+                        connections.Add(new Connection { Line = i + 1, Position = np, Number = int.Parse(number) });
                     }
                 }
             }
@@ -96,8 +93,6 @@ for (int i = 0; i < lines.Length; i++)
             lastPos = -1;
         }
     }
-    
-    linenumber++;
 }
 
 var duplicateConnections = connections
@@ -109,16 +104,16 @@ var result = duplicateConnections
     .GroupBy(c => new { c.Line, c.Position })
     .Select(g => new
     {
-        Line = g.Key.Line,
-        Position = g.Key.Position,
+        g.Key.Line,
+        g.Key.Position,
         MultiplicationResult = g.Select(c => c.Number).Aggregate((a, b) => a * b)
     });
 
-int totalSum = result.Sum(item => item.MultiplicationResult);
+var totalSum = result.Sum(item => item.MultiplicationResult);
 
-Console.WriteLine($"Total sum: {totalSum}");
+Console.WriteLine($"Answer: {totalSum}");
 
-class Connection
+internal class Connection
 { 
     public int Line;
     public int Position;

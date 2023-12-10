@@ -23,25 +23,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="A02 inspected">
-      <change afterPath="$PROJECT_DIR$/ConsoleApp01B/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsoleApp02B/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" />
+    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="A03 inspected">
+      <change afterPath="$PROJECT_DIR$/ConsoleApp03B/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp01B/ConsoleApp01B.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/ConsoleApp01B.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp01B/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp02B/ConsoleApp02B.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/ConsoleApp02B.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp02B/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp02B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp02B/bin/Debug/net6.0/ConsoleApp02B.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/bin/Debug/net6.0/ConsoleApp02B.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp02B/bin/Debug/net6.0/ConsoleApp02B.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/bin/Debug/net6.0/ConsoleApp02B.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp03A/ConsoleApp03A.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03A/ConsoleApp03A.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp03A/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp03A/Input3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03A/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp03A/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03A/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp03A/bin/Debug/net6.0/ConsoleApp03A.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03A/bin/Debug/net6.0/ConsoleApp03A.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp03A/bin/Debug/net6.0/ConsoleApp03A.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03A/bin/Debug/net6.0/ConsoleApp03A.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp03A/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03A/obj/Debug/net6.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp03B/ConsoleApp03B.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03B/ConsoleApp03B.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp03B/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp03B/Input3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03A/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp03B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03B/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp03B/bin/Debug/net6.0/ConsoleApp03B.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03B/bin/Debug/net6.0/ConsoleApp03B.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp03B/bin/Debug/net6.0/ConsoleApp03B.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03B/bin/Debug/net6.0/ConsoleApp03B.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp03B/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03B/obj/Debug/net6.0/apphost.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +45,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ConsoleApp02B/bin/Debug/net6.0/ConsoleApp02B.runtimeconfig.json" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ConsoleApp03A/bin/Debug/net6.0/ConsoleApp03A.runtimeconfig.json" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -77,6 +69,7 @@
     ".NET Project.ConsoleApp10B.executor": "Debug",
     ".NET Project.ConsoleApp2.executor": "Debug",
     ".NET Project.ConsoleApp3.executor": "Debug",
+    ".NET Project.ConsoleApp3B.executor": "Debug",
     ".NET Project.ConsoleApp9B.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -98,7 +91,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.ConsoleApp3">
+  <component name="RunManager" selected=".NET Project.ConsoleApp3B">
     <configuration name="ConsoleApp1" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -456,7 +449,7 @@
       <workItem from="1702213300975" duration="5545000" />
       <workItem from="1702218928765" duration="3424000" />
       <workItem from="1702222443495" duration="243000" />
-      <workItem from="1702242137454" duration="3341000" />
+      <workItem from="1702242137454" duration="3663000" />
     </task>
     <task id="LOCAL−00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -521,7 +514,14 @@
       <option name="presentableId" value="LOCAL−00009" />
       <updated>1702245047753</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL−00010" summary="A03 inspected">
+      <option name="closed" value="true" />
+      <created>1702245515720</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1702245515720</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,6 +548,26 @@
     <MESSAGE value="10B" />
     <MESSAGE value="A01 inspected" />
     <MESSAGE value="A02 inspected" />
-    <option name="LAST_COMMIT_MESSAGE" value="A02 inspected" />
+    <MESSAGE value="A03 inspected" />
+    <option name="LAST_COMMIT_MESSAGE" value="A03 inspected" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ConsoleApp03B/Program.cs</url>
+          <line>12</line>
+          <properties documentPath="C:\repos\AOE23\ConsoleApp03B\Program.cs" initialLine="12" containingFunctionPresentation="">
+            <startOffsets>
+              <option value="286" />
+            </startOffsets>
+            <endOffsets>
+              <option value="326" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
