@@ -1,30 +1,25 @@
-﻿Console.WriteLine("Hello, World!");
+﻿/*
+ * FileName: Program.cs
+ * Author: Benjamin Cederholm
+ * Date Created: 2023-10-05
+ * Last Modified: 2023-12-10
+ * Description: https://adventofcode.com/2023/day/5 - Part One
+ * Keywords: N/A
+ */
 
-string filePath1 = "C:\\repos\\offside\\ConsoleApp01\\ConsoleApp05A\\Input5A-seed.txt";
-string filePath2 = "C:\\repos\\offside\\ConsoleApp01\\ConsoleApp05A\\Input5A-map.txt";
-string[] lines1 = File.ReadAllLines(filePath1);
-string[] lines2 = File.ReadAllLines(filePath2);
-
-List<Seed> seeds = new List<Seed>();
-
-foreach (var line in lines1)
-{
-    var line2 = line.Replace("seeds: ", "");
-    var seedNumbers = line2.Split(" ", StringSplitOptions.RemoveEmptyEntries);
-    foreach (var seedNumber in seedNumbers)
-    {
-        seeds.Add(new Seed()
-        {
-            SeedNumber = Int64.Parse(seedNumber)
-        });
-    }
-}
+const string filePath1 = "input-seed.txt";
+const string filePath2 = "input-map.txt";
+var lines1 = File.ReadAllLines(filePath1);
+var lines2 = File.ReadAllLines(filePath2);
+List<Seed> seeds = (
+    from line in lines1
+    select line.Replace("seeds: ", "")
+    into line2 from seedNumber in line2.Split(" ", StringSplitOptions.RemoveEmptyEntries)
+    select new Seed { SeedNumber = long.Parse(seedNumber) }).ToList();
 
 var mapType = "";
-
 var maps = new List<Maps>();
-
-List<FromTo> fromTo = new List<FromTo>();
+var fromTo = new List<FromTo>();
 
 foreach (var line in lines2)
 {
@@ -33,53 +28,43 @@ foreach (var line in lines2)
         continue;
     }
     
-    if (line.Contains(":"))
+    if (line.Contains(':'))
     {
         if (fromTo.Count > 0)
         {
-            maps.Add(new Maps()
+            maps.Add(new Maps
             {
                 MapType = mapType,
                 FromToMappings = fromTo
             });
         }
-
         mapType = line.Replace(" map:", "");
         fromTo = new List<FromTo>();
         continue;
     }
     
     var lineSplit = line.Split(" ", StringSplitOptions.RemoveEmptyEntries);
-    fromTo.Add(new FromTo()
+    fromTo.Add(new FromTo
     {
-        FromSourceNumber = Int64.Parse(lineSplit[1]),
-        ToSourceNumber = Int64.Parse(lineSplit[1]) + Int64.Parse(lineSplit[2]),
-        FromTargetNumber = Int64.Parse(lineSplit[0]),
-        ToTargetumber = Int64.Parse(lineSplit[0]) + Int64.Parse(lineSplit[2]),
+        FromSourceNumber = long.Parse(lineSplit[1]),
+        ToSourceNumber = long.Parse(lineSplit[1]) + long.Parse(lineSplit[2]),
+        FromTargetNumber = long.Parse(lineSplit[0])
     });
 }
 
 //Last run
 if (fromTo.Count > 0)
 {
-    maps.Add(new Maps()
+    maps.Add(new Maps
     {
         MapType = mapType,
-        FromToMappings = fromTo,
+        FromToMappings = fromTo
     });
-}
-
-long LookupMapping(string mapType, long sourceNumber)
-{
-    var fromTo = maps.First(m => m.MapType == mapType).FromToMappings.FirstOrDefault(m => m.FromSourceNumber <= sourceNumber && m.ToSourceNumber >= sourceNumber);
-    var targetNumber = fromTo == null ? sourceNumber : fromTo.FromTargetNumber + (sourceNumber - fromTo.FromSourceNumber);
-    return targetNumber;
 }
 
 foreach (var seed in seeds)
 {
-    var workNumber = seed.SeedNumber;
-    workNumber = LookupMapping("seed-to-soil", seed.SeedNumber);
+    var workNumber = LookupMapping("seed-to-soil", seed.SeedNumber);
     workNumber = LookupMapping("soil-to-fertilizer", workNumber);
     workNumber = LookupMapping("fertilizer-to-water", workNumber);
     workNumber = LookupMapping("water-to-light", workNumber);
@@ -91,24 +76,31 @@ foreach (var seed in seeds)
 
 var totalSum = seeds.Select(s => s.LocationNumber).Min();
 
-Console.WriteLine($"Finished: {totalSum}");
+Console.WriteLine($"Answer: {totalSum}");
+return;
 
-public class FromTo
+long LookupMapping(string mt, long sourceNumber)
 {
-    public Int64 FromSourceNumber { get; set; }
-    public Int64 ToSourceNumber { get; set; }
-    public Int64 FromTargetNumber { get; set; }
-    public Int64 ToTargetumber { get; set; }
+    var ft = (maps.First(m => m.MapType == mt).FromToMappings ?? throw new InvalidOperationException()).FirstOrDefault(m => m.FromSourceNumber <= sourceNumber && m.ToSourceNumber >= sourceNumber);
+    var targetNumber = ft == null ? sourceNumber : ft.FromTargetNumber + (sourceNumber - ft.FromSourceNumber);
+    return targetNumber;
 }
 
-public class Maps
+internal class FromTo
 {
-    public string MapType { get; set; }
-    public List<FromTo> FromToMappings { get; set; }
+    public long FromSourceNumber { get; init; }
+    public long ToSourceNumber { get; init; }
+    public long FromTargetNumber { get; init; }
 }
 
-public class Seed
+internal class Maps
 {
-    public Int64 SeedNumber { get; set; }
-    public Int64 LocationNumber { get; set; }
+    public string? MapType { get; init; }
+    public List<FromTo>? FromToMappings { get; init; }
+}
+
+internal class Seed
+{
+    public long SeedNumber { get; init; }
+    public long LocationNumber { get; set; }
 }

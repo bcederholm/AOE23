@@ -23,22 +23,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="A04A inspected">
-      <change afterPath="$PROJECT_DIR$/ConsoleApp04B/input.txt" afterDir="false" />
+    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="A04B inspected">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp01B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp02B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp03A/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03A/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp03B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03B/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp04A/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp04A/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp04B/ConsoleApp04B.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp04B/ConsoleApp04B.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp04B/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp04B/Input4B.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp04A/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp04B/Intro4B.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp04B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp04B/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp04B/bin/Debug/net6.0/ConsoleApp04B.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp04B/bin/Debug/net6.0/ConsoleApp04B.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp04B/bin/Debug/net6.0/ConsoleApp04B.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp04B/bin/Debug/net6.0/ConsoleApp04B.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp04B/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp04B/obj/Debug/net6.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05A/ConsoleApp05A.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05A/ConsoleApp05A.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05A/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05A/Input5A-map.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05A/input-map.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05A/Input5A-seed.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05A/input-seed.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05A/Intro5A-map.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05A/Intro5A-seed.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05A/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05A/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05A/bin/Debug/net6.0/ConsoleApp05A.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05A/bin/Debug/net6.0/ConsoleApp05A.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05A/bin/Debug/net6.0/ConsoleApp05A.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05A/bin/Debug/net6.0/ConsoleApp05A.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05A/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05A/obj/Debug/net6.0/apphost.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +76,7 @@
     ".NET Project.ConsoleApp3B.executor": "Debug",
     ".NET Project.ConsoleApp4A.executor": "Debug",
     ".NET Project.ConsoleApp4B.executor": "Debug",
+    ".NET Project.ConsoleApp5A.executor": "Debug",
     ".NET Project.ConsoleApp9B.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -101,7 +98,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.ConsoleApp4B">
+  <component name="RunManager" selected=".NET Project.ConsoleApp5A">
     <configuration name="ConsoleApp1" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -459,7 +456,7 @@
       <workItem from="1702213300975" duration="5545000" />
       <workItem from="1702218928765" duration="3424000" />
       <workItem from="1702222443495" duration="243000" />
-      <workItem from="1702242137454" duration="5002000" />
+      <workItem from="1702242137454" duration="5583000" />
     </task>
     <task id="LOCAL−00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -545,7 +542,14 @@
       <option name="presentableId" value="LOCAL−00012" />
       <updated>1702246549742</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL−00013" summary="A04B inspected">
+      <option name="closed" value="true" />
+      <created>1702247278853</created>
+      <option name="number" value="LOCAL−00013" />
+      <option name="presentableId" value="LOCAL−00013" />
+      <updated>1702247278853</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -557,7 +561,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -575,6 +591,7 @@
     <MESSAGE value="A03 inspected" />
     <MESSAGE value="A03B inspected" />
     <MESSAGE value="A04A inspected" />
-    <option name="LAST_COMMIT_MESSAGE" value="A04A inspected" />
+    <MESSAGE value="A04B inspected" />
+    <option name="LAST_COMMIT_MESSAGE" value="A04B inspected" />
   </component>
 </project>
