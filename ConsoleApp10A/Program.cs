@@ -152,6 +152,10 @@ foreach (var direction in directions)
                         break;
                 }
                 break;
+            default:
+                Console.WriteLine("Hitted a dot");
+                finished = true;
+                break;
         }
         if (currentPosX < 0 || currentPosX >= matrix.GetLength(0) || currentPosY < 0 || currentPosY >= matrix.GetLength(1))
         {
