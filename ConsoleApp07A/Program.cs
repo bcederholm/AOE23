@@ -1,10 +1,16 @@
-﻿using System.Text.RegularExpressions;
+﻿/*
+ * FileName: Program.cs
+ * Author: Benjamin Cederholm
+ * Date Created: 2023-10-07
+ * Last Modified: 2023-12-10
+ * Description: https://adventofcode.com/2023/day/7 - Part One
+ * Keywords: Poker
+ */
 
-const string filePath1 = "C:\\repos\\offside\\ConsoleApp01\\ConsoleApp07A\\Input7.txt";
-
+const string filePath1 = "input.txt";
 var lines1 = File.ReadAllLines(filePath1);
 
-var cardRanks = new Dictionary<string, Rank>()
+var cardRanks = new Dictionary<string, Rank>
 {
     {"A", Rank.Ace},
     {"K", Rank.King},
@@ -21,26 +27,18 @@ var cardRanks = new Dictionary<string, Rank>()
     {"2", Rank.Two}
 };
 
-var evaluator = new PokerHandEvaluator();
+var hands = (
+    from line in lines1 select line.Split(" ", StringSplitOptions.RemoveEmptyEntries)
+    into lineSegments let lineCards = new List<Card>(lineSegments[0].ToCharArray().Select(s => new Card(cardRanks[s.ToString()])).ToArray())
+    select new Hand { Cards = lineCards, Bid = Convert.ToInt32(lineSegments[1]), Value = PokerHandEvaluator.EvaluateHand(lineCards) }).ToList();
 
-var hands = new List<Hand>();
-
-foreach (var line in lines1)
-{
-    var lineSegments = line.Split(" ", StringSplitOptions.RemoveEmptyEntries);
-
-    var lineCards = new List<Card>(lineSegments[0].ToCharArray().Select(s => new Card(cardRanks[s.ToString()])).ToArray());
-    
-    hands.Add(new Hand()
-    {
-        CardsString = lineSegments[0],
-        Cards = lineCards,
-        Bid = Convert.ToInt32(lineSegments[1]),
-        Value = evaluator.EvaluateHand(lineCards),
-    });
-}
-
-var sortedHands = hands.OrderBy(h => h.Value).ThenBy(h => h.Cards[0].Rank).ThenBy(h => h.Cards[1].Rank).ThenBy(h => h.Cards[2].Rank).ThenBy(h => h.Cards[3].Rank).ThenBy(h => h.Cards[4].Rank).ToList();
+var sortedHands = hands.OrderBy(h => h.Value)
+    .ThenBy(h => h.Cards![0].Rank)
+    .ThenBy(h => h.Cards![1].Rank)
+    .ThenBy(h => h.Cards![2].Rank)
+    .ThenBy(h => h.Cards![3].Rank)
+    .ThenBy(h => h.Cards![4].Rank)
+    .ToList();
 
 var rankNumber = 0;
 foreach (var hand in sortedHands)
@@ -51,9 +49,9 @@ foreach (var hand in sortedHands)
 
 var totalWinnings = sortedHands.Sum(h => h.Winning);
 
-Console.WriteLine($"totalWinnings: {totalWinnings}");
+Console.WriteLine($"Answer: {totalWinnings}");
 
-public enum Rank
+internal enum Rank
 {
     Two = 2,
     Three,
@@ -70,17 +68,15 @@ public enum Rank
     Ace
 }
 
-public class Hand
+internal class Hand
 {
-    public string CardsString { get; set; }
-    public List<Card> Cards { get; set; }
-    public int Bid { get; set; }
-    public PokerHandEvaluator.HandRank Value { get; set; }
+    public List<Card>? Cards { get; init; }
+    public int Bid { get; init; }
+    public PokerHandEvaluator.HandRank Value { get; init; }
     public int Winning { get; set; }
 }
 
-
-public class Card
+internal class Card
 {
     public Rank Rank { get; }
     public Card(Rank rank)
@@ -89,8 +85,8 @@ public class Card
     }
 }
 
-
-public class PokerHandEvaluator
+// Credit: https://blog.stackademic.com/building-a-simple-poker-hand-evaluator-in-c-1bb81676c25c
+internal static class PokerHandEvaluator
 {
     public enum HandRank
     {
@@ -100,10 +96,10 @@ public class PokerHandEvaluator
         ThreeOfAKind,
         FullHouse,
         FourOfAKind,
-        FiveOfAKind,
+        FiveOfAKind
     }
 
-    public HandRank EvaluateHand(List<Card> hand)
+    public static HandRank EvaluateHand(List<Card> hand)
     {
         if (IsFiveOfAKind(hand)) return HandRank.FiveOfAKind;
         if (IsFourOfAKind(hand)) return HandRank.FourOfAKind;
@@ -128,7 +124,8 @@ public class PokerHandEvaluator
     private static bool IsFullHouse(IEnumerable<Card> hand)
     {
         var rankGroups = hand.GroupBy(card => card.Rank);
-        return rankGroups.Any(group => group.Count() == 3) && rankGroups.Any(group => group.Count() == 2);
+        var enumerable = rankGroups as IGrouping<Rank, Card>[] ?? rankGroups.ToArray();
+        return enumerable.Any(group => group.Count() == 3) && enumerable.Any(group => group.Count() == 2);
     }
 
     private static bool IsThreeOfAKind(IEnumerable<Card> hand)

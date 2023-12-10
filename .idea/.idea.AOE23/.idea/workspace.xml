@@ -23,48 +23,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="A05B inspected">
-      <change beforePath="$PROJECT_DIR$/AOE23.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AOE23.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/ConsoleApp06A.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/ConsoleApp06B.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/bin/Debug/net6.0/ConsoleApp06A.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/bin/Debug/net6.0/ConsoleApp06B.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/bin/Debug/net6.0/ConsoleApp06A.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/bin/Debug/net6.0/ConsoleApp06B.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/bin/Debug/net6.0/ConsoleApp6A.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/bin/Debug/net6.0/ConsoleApp6A.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/bin/Debug/net6.0/ConsoleApp6A.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/bin/Debug/net6.0/ConsoleApp6A.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/bin/Debug/net6.0/ConsoleApp6A.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/bin/Debug/net6.0/ConsoleApp6A.runtimeconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/ConsoleApp06A.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/ConsoleApp06A.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/ConsoleApp06A.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/ConsoleApp06A.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/ConsoleApp06A.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/ConsoleApp06A.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/ConsoleApp6A.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/ConsoleApp6A.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/ConsoleApp6A.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/ConsoleApp6A.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/ConsoleApp6A.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/ConsoleApp6A.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/Debug/net6.0/ConsoleApp06A.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/Debug/net6.0/ConsoleApp06A.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/Debug/net6.0/ConsoleApp06A.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/Debug/net6.0/ConsoleApp06A.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/Debug/net6.0/ConsoleApp06A.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/Debug/net6.0/ConsoleApp06A.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/Debug/net6.0/ConsoleApp06A.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/Debug/net6.0/ConsoleApp06A.GlobalUsings.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/Debug/net6.0/ConsoleApp06A.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/Debug/net6.0/ConsoleApp06A.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/Debug/net6.0/ConsoleApp06A.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/Debug/net6.0/ConsoleApp06A.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/Debug/net6.0/ConsoleApp6A.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/Debug/net6.0/ConsoleApp6A.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/Debug/net6.0/ConsoleApp6A.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/Debug/net6.0/ConsoleApp6A.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/Debug/net6.0/ConsoleApp6A.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/Debug/net6.0/ConsoleApp6A.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/Debug/net6.0/ConsoleApp6A.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/Debug/net6.0/ConsoleApp6A.GlobalUsings.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/Debug/net6.0/ConsoleApp6A.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/Debug/net6.0/ConsoleApp6A.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/Debug/net6.0/ConsoleApp6A.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/Debug/net6.0/ConsoleApp6A.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/Debug/net6.0/ConsoleApp6A.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/Debug/net6.0/ConsoleApp6A.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/Debug/net6.0/ConsoleApp6A.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/Debug/net6.0/ConsoleApp6A.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/Debug/net6.0/ConsoleApp6A.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/Debug/net6.0/ConsoleApp6A.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/Debug/net6.0/ConsoleApp6A.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/Debug/net6.0/ConsoleApp6A.genruntimeconfig.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/Debug/net6.0/ConsoleApp6A.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/Debug/net6.0/ConsoleApp6A.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/Debug/net6.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/Debug/net6.0/ref/ConsoleApp6A.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/Debug/net6.0/ref/ConsoleApp6A.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/Debug/net6.0/refint/ConsoleApp6A.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/Debug/net6.0/refint/ConsoleApp6A.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06A/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/rider.project.restore.info" afterDir="false" />
+    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="A06B inspected">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp07A/ConsoleApp07A.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp07A/ConsoleApp07A.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp07A/Input7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp07A/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp07A/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp07A/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp07A/bin/Debug/net6.0/ConsoleApp07A.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp07A/bin/Debug/net6.0/ConsoleApp07A.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp07A/bin/Debug/net6.0/ConsoleApp07A.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp07A/bin/Debug/net6.0/ConsoleApp07A.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp07A/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp07A/obj/Debug/net6.0/apphost.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +75,7 @@
     ".NET Project.ConsoleApp5A.executor": "Debug",
     ".NET Project.ConsoleApp5B.executor": "Debug",
     ".NET Project.ConsoleApp6A.executor": "Debug",
+    ".NET Project.ConsoleApp7A.executor": "Debug",
     ".NET Project.ConsoleApp9B.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -130,7 +97,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.ConsoleApp6A">
+  <component name="RunManager" selected=".NET Project.ConsoleApp7A">
     <configuration name="ConsoleApp1" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -488,7 +455,7 @@
       <workItem from="1702213300975" duration="5545000" />
       <workItem from="1702218928765" duration="3424000" />
       <workItem from="1702222443495" duration="243000" />
-      <workItem from="1702242137454" duration="6785000" />
+      <workItem from="1702242137454" duration="7415000" />
     </task>
     <task id="LOCAL−00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -595,7 +562,14 @@
       <option name="presentableId" value="LOCAL−00015" />
       <updated>1702248721256</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL−00016" summary="A06B inspected">
+      <option name="closed" value="true" />
+      <created>1702249048360</created>
+      <option name="number" value="LOCAL−00016" />
+      <option name="presentableId" value="LOCAL−00016" />
+      <updated>1702249048360</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -640,6 +614,7 @@
     <MESSAGE value="A04B inspected" />
     <MESSAGE value="A05A inspected" />
     <MESSAGE value="A05B inspected" />
-    <option name="LAST_COMMIT_MESSAGE" value="A05B inspected" />
+    <MESSAGE value="A06B inspected" />
+    <option name="LAST_COMMIT_MESSAGE" value="A06B inspected" />
   </component>
 </project>
