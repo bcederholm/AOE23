@@ -1,36 +1,27 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿/*
+ * FileName: Program.cs
+ * Author: Benjamin Cederholm
+ * Date Created: 2023-10-03
+ * Last Modified: 2023-12-10
+ * Description: https://adventofcode.com/2023/day/3 - Part One
+ * Lessons learned: N/A
+ */
 
-Console.WriteLine("Hello, World!");
-
-string filePath = "C:\\repos\\offside\\ConsoleApp01\\ConsoleApp03A\\Input3.txt";
-string[] lines = File.ReadAllLines(filePath);
-
-string concatenateLines = string.Join(".", lines);
-char[] uniqueChars = concatenateLines.Distinct().Where(n => !char.IsNumber(n)).ToArray();
-
-
-string previousLine;
-string currentLine;
-string nextLine;
+const string filePath = "input.txt";
+var lines = File.ReadAllLines(filePath);
 
 var firstPos = -1;
 var lastPos = -1;
+var sum = 0;
 
-
-int linenumber = 1;
-
-int sum = 0;
-
-
-for (int i = 0; i < lines.Length; i++)
+for (var i = 0; i < lines.Length; i++)
 {
-    previousLine = i > 0 ? lines[i - 1] : "";
-    currentLine = lines[i];
-    nextLine = i < lines.Length - 1 ? lines[i + 1] : "";
+    var previousLine = i > 0 ? lines[i - 1] : "";
+    var currentLine = lines[i];
+    var nextLine = i < lines.Length - 1 ? lines[i + 1] : "";
     
-    for (int p = 0; p <= currentLine.Length - 1; p++)
+    for (var p = 0; p <= currentLine.Length - 1; p++)
     {
-
         if (i == 23 && p == 136)
         {
             Console.WriteLine("ERROR");
@@ -63,7 +54,7 @@ for (int i = 0; i < lines.Length; i++)
             // Check previous line
             if (previousLine != "")
             {
-                for (int pl = (firstPos == 0 ? firstPos : firstPos - 1); pl <= (lastPos == currentLine.Length - 1 ? lastPos : lastPos + 1); pl++)
+                for (var pl = firstPos == 0 ? firstPos : firstPos - 1; pl <= (lastPos == currentLine.Length - 1 ? lastPos : lastPos + 1); pl++)
                 {
                     if (previousLine[pl] != '.')
                     {
@@ -95,7 +86,7 @@ for (int i = 0; i < lines.Length; i++)
             // Check next line
             if (nextLine != "")
             {
-                for (int np = (firstPos == 0 ? firstPos : firstPos - 1); np <= (lastPos == currentLine.Length - 1 ? lastPos : lastPos + 1); np++)
+                for (var np = firstPos == 0 ? firstPos : firstPos - 1; np <= (lastPos == currentLine.Length - 1 ? lastPos : lastPos + 1); np++)
                 {
                     if (nextLine[np] != '.')
                     {
@@ -118,10 +109,5 @@ for (int i = 0; i < lines.Length; i++)
             lastPos = -1;
         }
     }
-    
-    Console.WriteLine($"Sum on linenumber {linenumber}: {sum}");
-    linenumber++;
 }
-
-
-
+Console.WriteLine($"Answer: {sum}");

@@ -56,7 +56,6 @@ foreach (var line in lines)
     }
 
     sum += red * green * blue;
-    
 }
 
 Console.WriteLine($"Answer: {sum}");
