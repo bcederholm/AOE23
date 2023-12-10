@@ -23,7 +23,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="">
+    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="10B">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02/obj/rider.project.model.nuget.info" afterDir="false" />
@@ -53,6 +53,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/ConsoleApp01/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/repos/AOE23/ConsoleApp10A/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -445,7 +446,7 @@
       <workItem from="1702164934895" duration="9674000" />
       <workItem from="1702205434650" duration="992000" />
       <workItem from="1702213300975" duration="5545000" />
-      <workItem from="1702218928765" duration="2835000" />
+      <workItem from="1702218928765" duration="3200000" />
     </task>
     <task id="LOCAL−00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -475,7 +476,14 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1702196775707</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="10B">
+      <option name="closed" value="true" />
+      <created>1702222093122</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1702222093122</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -499,6 +507,7 @@
     <MESSAGE value="Rename" />
     <MESSAGE value="Merge" />
     <MESSAGE value="10A" />
-    <option name="LAST_COMMIT_MESSAGE" value="10A" />
+    <MESSAGE value="10B" />
+    <option name="LAST_COMMIT_MESSAGE" value="10B" />
   </component>
 </project>
