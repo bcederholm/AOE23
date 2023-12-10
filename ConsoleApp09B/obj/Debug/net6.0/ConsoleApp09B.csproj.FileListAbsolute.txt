@@ -1,0 +1,15 @@
+C:\repos\AOE23\ConsoleApp09B\bin\Debug\net6.0\ConsoleApp09B.exe
+C:\repos\AOE23\ConsoleApp09B\bin\Debug\net6.0\ConsoleApp09B.deps.json
+C:\repos\AOE23\ConsoleApp09B\bin\Debug\net6.0\ConsoleApp09B.runtimeconfig.json
+C:\repos\AOE23\ConsoleApp09B\bin\Debug\net6.0\ConsoleApp09B.dll
+C:\repos\AOE23\ConsoleApp09B\bin\Debug\net6.0\ConsoleApp09B.pdb
+C:\repos\AOE23\ConsoleApp09B\obj\Debug\net6.0\ConsoleApp09B.csproj.AssemblyReference.cache
+C:\repos\AOE23\ConsoleApp09B\obj\Debug\net6.0\ConsoleApp09B.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\AOE23\ConsoleApp09B\obj\Debug\net6.0\ConsoleApp09B.AssemblyInfoInputs.cache
+C:\repos\AOE23\ConsoleApp09B\obj\Debug\net6.0\ConsoleApp09B.AssemblyInfo.cs
+C:\repos\AOE23\ConsoleApp09B\obj\Debug\net6.0\ConsoleApp09B.csproj.CoreCompileInputs.cache
+C:\repos\AOE23\ConsoleApp09B\obj\Debug\net6.0\ConsoleApp09B.dll
+C:\repos\AOE23\ConsoleApp09B\obj\Debug\net6.0\refint\ConsoleApp09B.dll
+C:\repos\AOE23\ConsoleApp09B\obj\Debug\net6.0\ConsoleApp09B.pdb
+C:\repos\AOE23\ConsoleApp09B\obj\Debug\net6.0\ConsoleApp09B.genruntimeconfig.cache
+C:\repos\AOE23\ConsoleApp09B\obj\Debug\net6.0\ref\ConsoleApp09B.dll
