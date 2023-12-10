@@ -1,13 +1,21 @@
-﻿Console.WriteLine("Hello, World!");
+﻿/*
+ * FileName: Program.cs
+ * Author: Benjamin Cederholm
+ * Date Created: 2023-10-05
+ * Last Modified: 2023-12-10
+ * Description: https://adventofcode.com/2023/day/5 - Part Two
+ * Keywords: Slow
+ */
 
-string filePath1 = "C:\\repos\\offside\\ConsoleApp01\\ConsoleApp05B\\Input5B-seed.txt";
-string filePath2 = "C:\\repos\\offside\\ConsoleApp01\\ConsoleApp05B\\Input5B-map.txt";
-string[] lines1 = File.ReadAllLines(filePath1);
-string[] lines2 = File.ReadAllLines(filePath2);
+const string filePath1 = "input-seed.txt";
+const string filePath2 = "input-map.txt";
+var lines1 = File.ReadAllLines(filePath1);
+var lines2 = File.ReadAllLines(filePath2);
 
 var mapType = "";
 var maps = new List<Maps>();
-List<FromTo> fromTo = new List<FromTo>();
+var fromTo = new List<FromTo>();
+
 foreach (var line in lines2)
 {
     if (line == "")
@@ -15,11 +23,11 @@ foreach (var line in lines2)
         continue;
     }
     
-    if (line.Contains(":"))
+    if (line.Contains(':'))
     {
         if (fromTo.Count > 0)
         {
-            maps.Add(new Maps()
+            maps.Add(new Maps
             {
                 MapType = mapType,
                 FromToMappings = fromTo
@@ -32,26 +40,23 @@ foreach (var line in lines2)
     }
     
     var lineSplit = line.Split(" ", StringSplitOptions.RemoveEmptyEntries);
-    fromTo.Add(new FromTo()
+    fromTo.Add(new FromTo
     {
-        FromSourceNumber = Int64.Parse(lineSplit[1]),
-        ToSourceNumber = Int64.Parse(lineSplit[1]) + Int64.Parse(lineSplit[2]) - 1,
-        FromTargetNumber = Int64.Parse(lineSplit[0]),
-        ToTargetumber = Int64.Parse(lineSplit[0]) + Int64.Parse(lineSplit[2]) - 1,
+        FromSourceNumber = long.Parse(lineSplit[1]),
+        ToSourceNumber = long.Parse(lineSplit[1]) + long.Parse(lineSplit[2]) - 1,
+        FromTargetNumber = long.Parse(lineSplit[0])
     });
 }
+
 //Last run
 if (fromTo.Count > 0)
 {
-    maps.Add(new Maps()
+    maps.Add(new Maps
     {
         MapType = mapType,
-        FromToMappings = fromTo,
+        FromToMappings = fromTo
     });
 }
-
-
-
 
 foreach (var line in lines1)
 {
@@ -63,20 +68,17 @@ foreach (var line in lines1)
         Console.WriteLine("Start on {0} with length {1}: {2}", seedPairs[0], seedPairs[1], DateTime.Now);
         
         var seeds = new List<Seed>();
-        for (long i = long.Parse(seedPairs[0]); i <= long.Parse(seedPairs[0]) + long.Parse(seedPairs[1]) - 1; i++)
+        for (var i = long.Parse(seedPairs[0]); i <= long.Parse(seedPairs[0]) + long.Parse(seedPairs[1]) - 1; i++)
         {
-            seeds.Add(new Seed()
+            seeds.Add(new Seed
             {
                 SeedNumber = i
             });
         }
-        
-        
-        
+
         foreach (var seed in seeds)
         {
-            var workNumber = seed.SeedNumber;
-            workNumber = LookupMapping("seed-to-soil", seed.SeedNumber);
+            var workNumber = LookupMapping("seed-to-soil", seed.SeedNumber);
             workNumber = LookupMapping("soil-to-fertilizer", workNumber);
             workNumber = LookupMapping("fertilizer-to-water", workNumber);
             workNumber = LookupMapping("water-to-light", workNumber);
@@ -88,15 +90,15 @@ foreach (var line in lines1)
         
         var totalSum = seeds.Select(s => s.LocationNumber).Min();
         Console.WriteLine("End, lowest sum: {0}", totalSum);
-        File.AppendAllText("C:\\repos\\offside\\ConsoleApp01\\ConsoleApp05B\\Output5B.txt", totalSum + "\n");
+        File.AppendAllText("output.txt", totalSum + "\n");
     }
 }
 
+return;
 
-
-long LookupMapping(string mapType, long sourceNumber)
+long LookupMapping(string mt, long sourceNumber)
 {
-    var fromToMapping = maps.First(m => m.MapType == mapType).FromToMappings.FirstOrDefault(m => m.FromSourceNumber <= sourceNumber && m.ToSourceNumber >= sourceNumber);
+    var fromToMapping = (maps.First(m => m.MapType == mt).FromToMappings ?? throw new InvalidOperationException()).FirstOrDefault(m => m.FromSourceNumber <= sourceNumber && m.ToSourceNumber >= sourceNumber);
     long targetNumber;
     if (fromToMapping == null)
     {
@@ -109,28 +111,21 @@ long LookupMapping(string mapType, long sourceNumber)
     return targetNumber;
 }
 
-
-
-
-
-Console.WriteLine($"Finished");
-
-public class FromTo
+internal class FromTo
 {
-    public Int64 FromSourceNumber { get; set; }
-    public Int64 ToSourceNumber { get; set; }
-    public Int64 FromTargetNumber { get; set; }
-    public Int64 ToTargetumber { get; set; }
+    public long FromSourceNumber { get; init; }
+    public long ToSourceNumber { get; init; }
+    public long FromTargetNumber { get; init; }
 }
 
-public class Maps
+internal class Maps
 {
-    public string MapType { get; set; }
-    public List<FromTo> FromToMappings { get; set; }
+    public string? MapType { get; init; }
+    public List<FromTo>? FromToMappings { get; init; }
 }
 
-public class Seed
+internal class Seed
 {
-    public Int64 SeedNumber { get; set; }
-    public Int64 LocationNumber { get; set; }
+    public long SeedNumber { get; init; }
+    public long LocationNumber { get; set; }
 }

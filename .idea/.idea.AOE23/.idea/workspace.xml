@@ -23,18 +23,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="A04B inspected">
+    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="A05A inspected">
+      <change afterPath="$PROJECT_DIR$/ConsoleApp05A/input-seed.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsoleApp05B/input-map.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp05A/ConsoleApp05A.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05A/ConsoleApp05A.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp05A/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp05A/Input5A-map.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05A/input-map.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp05A/Input5A-seed.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05A/input-seed.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp05A/Intro5A-map.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp05A/Intro5A-seed.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp05A/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05A/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp05A/bin/Debug/net6.0/ConsoleApp05A.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05A/bin/Debug/net6.0/ConsoleApp05A.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp05A/bin/Debug/net6.0/ConsoleApp05A.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05A/bin/Debug/net6.0/ConsoleApp05A.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp05A/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05A/obj/Debug/net6.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05B/ConsoleApp05B.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05B/ConsoleApp05B.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05B/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05B/Input5B-map.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05A/input-map.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05B/Input5B-seed.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05B/input-seed.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05B/Intro5B-map.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05B/Intro5B-seed.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05B/Output5B.bak.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05B/Output5B.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05B/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05B/bin/Debug/net6.0/ConsoleApp05B.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05B/bin/Debug/net6.0/ConsoleApp05B.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05B/bin/Debug/net6.0/ConsoleApp05B.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05B/bin/Debug/net6.0/ConsoleApp05B.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05B/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05B/obj/Debug/net6.0/apphost.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +83,7 @@
     ".NET Project.ConsoleApp4A.executor": "Debug",
     ".NET Project.ConsoleApp4B.executor": "Debug",
     ".NET Project.ConsoleApp5A.executor": "Debug",
+    ".NET Project.ConsoleApp5B.executor": "Debug",
     ".NET Project.ConsoleApp9B.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -98,7 +105,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.ConsoleApp5A">
+  <component name="RunManager" selected=".NET Project.ConsoleApp5B">
     <configuration name="ConsoleApp1" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -456,7 +463,7 @@
       <workItem from="1702213300975" duration="5545000" />
       <workItem from="1702218928765" duration="3424000" />
       <workItem from="1702222443495" duration="243000" />
-      <workItem from="1702242137454" duration="5583000" />
+      <workItem from="1702242137454" duration="6480000" />
     </task>
     <task id="LOCAL−00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -549,7 +556,14 @@
       <option name="presentableId" value="LOCAL−00013" />
       <updated>1702247278853</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL−00014" summary="A05A inspected">
+      <option name="closed" value="true" />
+      <created>1702248051077</created>
+      <option name="number" value="LOCAL−00014" />
+      <option name="presentableId" value="LOCAL−00014" />
+      <updated>1702248051077</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -592,6 +606,7 @@
     <MESSAGE value="A03B inspected" />
     <MESSAGE value="A04A inspected" />
     <MESSAGE value="A04B inspected" />
-    <option name="LAST_COMMIT_MESSAGE" value="A04B inspected" />
+    <MESSAGE value="A05A inspected" />
+    <option name="LAST_COMMIT_MESSAGE" value="A05A inspected" />
   </component>
 </project>
