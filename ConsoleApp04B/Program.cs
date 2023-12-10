@@ -1,47 +1,40 @@
-﻿Console.WriteLine("Hello, World!");
+﻿/*
+ * FileName: Program.cs
+ * Author: Benjamin Cederholm
+ * Date Created: 2023-10-04
+ * Last Modified: 2023-12-10
+ * Description: https://adventofcode.com/2023/day/4 - Part Two
+ * Keywords: Linq
+ */
 
-string filePath = "C:\\repos\\offside\\ConsoleApp01\\ConsoleApp04B\\Input4B.txt";
-string[] lines = File.ReadAllLines(filePath);
-char[] splitters = new char[] { '|', ':' };
-List<LineExtended> lineExtendeds = new List<LineExtended>();
+const string filePath = "input.txt";
+var lines = File.ReadAllLines(filePath);
+var splitters = new[] { '|', ':' };
+var linesExtended = (
+    from line in lines select line.Replace("  ", " ")
+    into line2 select line2.Replace("  ", " ")
+    into line2 select line2.Replace("Card ", "")
+    into line2 select line2.Split(splitters, StringSplitOptions.RemoveEmptyEntries)
+    into sections let winningNumbers = sections[1].Trim().Split(' ')
+    let myNumbers = sections[2].Trim().Split(' ')
+    select new LineExtended { CardNumber = int.Parse(sections[0]), Matches = winningNumbers.Intersect(myNumbers).Select(int.Parse).ToArray().Length, Quantity = 1 }).ToList();
 
-foreach (var line in lines)
+foreach (var line in linesExtended.Where(line => line.Matches > 0))
 {
-    var line2 = line.Replace("  ", " ");
-    line2 = line2.Replace("  ", " ");
-    line2 = line2.Replace("Card ", "");
-    
-    var sections = line2.Split(splitters, StringSplitOptions.RemoveEmptyEntries);
-    var winningNumbers = sections[1].Trim().Split(' ');
-    var myNumbers = sections[2].Trim().Split(' ');
-    lineExtendeds.Add(new LineExtended()
+    for (var i = line.CardNumber + 1; i <= line.CardNumber + line.Matches; i++)
     {
-        CardNumber = int.Parse(sections[0]),
-        Matches = winningNumbers.Intersect(myNumbers).Select(n => int.Parse(n)).ToArray().Length,
-        Quantity = 1,
-    });
-}
-
-foreach (var line in lineExtendeds)
-{
-    if (line.Matches > 0)
-    {
-        for (var i = line.CardNumber + 1; i <= line.CardNumber + line.Matches; i++)
+        if (i <= linesExtended.Count)
         {
-            if (i <= lineExtendeds.Count)
-            {
-                lineExtendeds[i - 1].Quantity += line.Quantity;
-            }
+            linesExtended[i - 1].Quantity += line.Quantity;
         }
     }
 }
 
-Console.WriteLine(lineExtendeds.Select(l => l.Quantity).Sum());
-    
+Console.WriteLine($"Answer: {linesExtended.Select(l => l.Quantity).Sum()}");
 
-public class LineExtended
+internal class LineExtended
 {
-    public int CardNumber { get; set; }
-    public int Matches { get; set; }
+    public int CardNumber { get; init; }
+    public int Matches { get; init; }
     public int Quantity { get; set; }
 }

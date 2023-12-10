@@ -4,14 +4,14 @@
  * Date Created: 2023-10-04
  * Last Modified: 2023-12-10
  * Description: https://adventofcode.com/2023/day/4 - Part One
- * Lessons learned: Linq
+ * Keywords: Linq
  */
 
 const string filePath = "input.txt";
 var lines = File.ReadAllLines(filePath);
-
 var splitters = new[] { '|', ':' };
-var totalSum = (from line in lines select line.Replace("  ", " ") 
+var totalSum = (
+    from line in lines select line.Replace("  ", " ") 
     into line2 select line2.Replace("  ", " ")
     into line2 select line2.Replace("Card ", "")
     into line2 select line2.Split(splitters, StringSplitOptions.RemoveEmptyEntries)

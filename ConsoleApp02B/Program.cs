@@ -4,7 +4,7 @@
  * Date Created: 2023-10-02
  * Last Modified: 2023-12-10
  * Description: https://adventofcode.com/2023/day/2 - Part Two
- * Lessons learned: N/A
+ * Keywords: N/A
  */
 
 const string filePath = "input.txt";

@@ -4,7 +4,7 @@
  * Date Created: 2023-10-03
  * Last Modified: 2023-12-10
  * Description: https://adventofcode.com/2023/day/3 - Part Two
- * Lessons learned: Linq
+ * Keywords: Linq
  */
 
 var connections = new List<Connection>();
