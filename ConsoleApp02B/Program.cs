@@ -1,24 +1,22 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿/*
+ * FileName: Program.cs
+ * Author: Benjamin Cederholm
+ * Date Created: 2023-10-02
+ * Last Modified: 2023-12-10
+ * Description: https://adventofcode.com/2023/day/2 - Part Two
+ * Lessons learned: N/A
+ */
 
-using System.Reflection.Emit;
+const string filePath = "input.txt";
+var lines = File.ReadAllLines(filePath);
 
-string filePath = "C:\\repos\\offside\\ConsoleApp01\\ConsoleApp02\\Games.txt";
-string[] lines = File.ReadAllLines(filePath);
+var sum = 0;
 
-var total = 0;
-
-
-
-var sumId = 0;
-// Loop through each line and display it
-
-
-foreach (string line in lines)
+foreach (var line in lines)
 {
     Console.WriteLine(line);
 
     var semiColonSplit = line.Split(':');
-    var prefixSplit = semiColonSplit[0].Split(' ');
     var gamesSplit = semiColonSplit[1].Split(';');
 
     var red = 0;
@@ -57,8 +55,8 @@ foreach (string line in lines)
         }
     }
 
-    sumId += red * green * blue;
+    sum += red * green * blue;
     
 }
 
-Console.WriteLine(sumId);
+Console.WriteLine($"Answer: {sum}");

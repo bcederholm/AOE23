@@ -23,14 +23,96 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="">
+    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="A01 inspected">
+      <change afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsoleApp02B/bin/Debug/net6.0/ConsoleApp02B.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp01/ConsoleApp01.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01/ConsoleApp01.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp01/NewFile1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp01/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp01/bin/Debug/net6.0/ConsoleApp01.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01/bin/Debug/net6.0/ConsoleApp01.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp01/bin/Debug/net6.0/ConsoleApp01.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01/bin/Debug/net6.0/ConsoleApp01.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01/obj/Debug/net6.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AOE23.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AOE23.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/ConsoleApp01.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/ConsoleApp01B.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/bin/Debug/net6.0/ConsoleApp01.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/bin/Debug/net6.0/ConsoleApp01B.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/bin/Debug/net6.0/ConsoleApp01.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/bin/Debug/net6.0/ConsoleApp01B.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/bin/Debug/net6.0/ConsoleApp1.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/bin/Debug/net6.0/ConsoleApp1.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/bin/Debug/net6.0/ConsoleApp1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/bin/Debug/net6.0/ConsoleApp1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/bin/Debug/net6.0/ConsoleApp1.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/bin/Debug/net6.0/ConsoleApp1.runtimeconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/ConsoleApp01.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/ConsoleApp01.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/ConsoleApp01.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/ConsoleApp01.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/ConsoleApp01.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/ConsoleApp01.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/ConsoleApp1.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/ConsoleApp1.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/ConsoleApp1.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/ConsoleApp1.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/ConsoleApp1.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/ConsoleApp1.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/Debug/net6.0/ConsoleApp01.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/ConsoleApp01.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/Debug/net6.0/ConsoleApp01.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/ConsoleApp01.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/Debug/net6.0/ConsoleApp01.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/ConsoleApp01.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/Debug/net6.0/ConsoleApp01.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/ConsoleApp01.GlobalUsings.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/Debug/net6.0/ConsoleApp01.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/ConsoleApp01.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/Debug/net6.0/ConsoleApp01.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/ConsoleApp01.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/Debug/net6.0/ConsoleApp1.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/ConsoleApp1.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/Debug/net6.0/ConsoleApp1.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/ConsoleApp1.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/Debug/net6.0/ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/Debug/net6.0/ConsoleApp1.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/ConsoleApp1.GlobalUsings.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/Debug/net6.0/ConsoleApp1.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/ConsoleApp1.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/Debug/net6.0/ConsoleApp1.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/ConsoleApp1.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/Debug/net6.0/ConsoleApp1.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/ConsoleApp1.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/Debug/net6.0/ConsoleApp1.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/ConsoleApp1.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/Debug/net6.0/ConsoleApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/ConsoleApp1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/Debug/net6.0/ConsoleApp1.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/ConsoleApp1.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/Debug/net6.0/ConsoleApp1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/ConsoleApp1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/Debug/net6.0/ref/ConsoleApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/ref/ConsoleApp1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/Debug/net6.0/refint/ConsoleApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/refint/ConsoleApp1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/ConsoleApp02.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/ConsoleApp02B.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/Games.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/bin/Debug/net6.0/ConsoleApp02.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/bin/Debug/net6.0/ConsoleApp02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/bin/Debug/net6.0/ConsoleApp02B.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/bin/Debug/net6.0/ConsoleApp2.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/bin/Debug/net6.0/ConsoleApp2.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/bin/Debug/net6.0/ConsoleApp2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/bin/Debug/net6.0/ConsoleApp2.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/bin/Debug/net6.0/ConsoleApp2.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/bin/Debug/net6.0/ConsoleApp2.runtimeconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/ConsoleApp02.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/ConsoleApp02.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/ConsoleApp02.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/ConsoleApp02.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/ConsoleApp02.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/ConsoleApp02.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/ConsoleApp2.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/ConsoleApp2.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/ConsoleApp2.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/ConsoleApp2.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/ConsoleApp2.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/ConsoleApp2.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/Debug/net6.0/ConsoleApp02.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/Debug/net6.0/ConsoleApp02.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/Debug/net6.0/ConsoleApp02.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/Debug/net6.0/ConsoleApp02.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/Debug/net6.0/ConsoleApp02.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/Debug/net6.0/ConsoleApp02.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/Debug/net6.0/ConsoleApp02.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/Debug/net6.0/ConsoleApp02.GlobalUsings.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/Debug/net6.0/ConsoleApp02.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/Debug/net6.0/ConsoleApp02.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/Debug/net6.0/ConsoleApp02.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/Debug/net6.0/ConsoleApp02.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/Debug/net6.0/ConsoleApp2.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/Debug/net6.0/ConsoleApp2.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/Debug/net6.0/ConsoleApp2.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/Debug/net6.0/ConsoleApp2.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/Debug/net6.0/ConsoleApp2.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/Debug/net6.0/ConsoleApp2.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/Debug/net6.0/ConsoleApp2.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/Debug/net6.0/ConsoleApp2.GlobalUsings.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/Debug/net6.0/ConsoleApp2.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/Debug/net6.0/ConsoleApp2.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/Debug/net6.0/ConsoleApp2.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/Debug/net6.0/ConsoleApp2.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/Debug/net6.0/ConsoleApp2.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/Debug/net6.0/ConsoleApp2.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/Debug/net6.0/ConsoleApp2.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/Debug/net6.0/ConsoleApp2.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/Debug/net6.0/ConsoleApp2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/Debug/net6.0/ConsoleApp2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/Debug/net6.0/ConsoleApp2.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/Debug/net6.0/ConsoleApp2.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/Debug/net6.0/ConsoleApp2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/Debug/net6.0/ConsoleApp2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/Debug/net6.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/Debug/net6.0/ref/ConsoleApp2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/Debug/net6.0/ref/ConsoleApp2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/Debug/net6.0/refint/ConsoleApp2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/Debug/net6.0/refint/ConsoleApp2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02/obj/rider.project.restore.info" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +146,7 @@
     ".NET Project.ConsoleApp1.executor": "Debug",
     ".NET Project.ConsoleApp10A.executor": "Debug",
     ".NET Project.ConsoleApp10B.executor": "Debug",
+    ".NET Project.ConsoleApp2.executor": "Debug",
     ".NET Project.ConsoleApp9B.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -85,7 +168,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.ConsoleApp1">
+  <component name="RunManager" selected=".NET Project.ConsoleApp2">
     <configuration name="ConsoleApp1" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -94,7 +177,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ConsoleApp01/ConsoleApp01.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ConsoleApp01B/ConsoleApp01B.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -148,7 +231,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ConsoleApp02/ConsoleApp02.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ConsoleApp02B/ConsoleApp02B.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -443,7 +526,7 @@
       <workItem from="1702213300975" duration="5545000" />
       <workItem from="1702218928765" duration="3424000" />
       <workItem from="1702222443495" duration="243000" />
-      <workItem from="1702242137454" duration="1303000" />
+      <workItem from="1702242137454" duration="2660000" />
     </task>
     <task id="LOCAL−00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -494,7 +577,14 @@
       <option name="presentableId" value="LOCAL−00007" />
       <updated>1702222551913</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL−00008" summary="A01 inspected">
+      <option name="closed" value="true" />
+      <created>1702243566048</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1702243566048</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,6 +609,7 @@
     <MESSAGE value="Merge" />
     <MESSAGE value="10A" />
     <MESSAGE value="10B" />
-    <option name="LAST_COMMIT_MESSAGE" value="10B" />
+    <MESSAGE value="A01 inspected" />
+    <option name="LAST_COMMIT_MESSAGE" value="A01 inspected" />
   </component>
 </project>

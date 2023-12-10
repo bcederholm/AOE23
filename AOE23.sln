@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp01", "ConsoleApp01\ConsoleApp01.csproj", "{0ED37D6E-CA93-4C05-8AC3-4A618E074CFD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp01B", "ConsoleApp01B\ConsoleApp01B.csproj", "{0ED37D6E-CA93-4C05-8AC3-4A618E074CFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp02", "ConsoleApp02\ConsoleApp02.csproj", "{4D66CB2C-1196-4ECC-A3C7-DCF0FC806A86}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp02B", "ConsoleApp02B\ConsoleApp02B.csproj", "{4D66CB2C-1196-4ECC-A3C7-DCF0FC806A86}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp03A", "ConsoleApp03A\ConsoleApp03A.csproj", "{D78EAD79-37B9-4A68-9798-34206A330ADC}"
 EndProject

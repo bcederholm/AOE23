@@ -3,7 +3,8 @@
  * Author: Benjamin Cederholm
  * Date Created: 2023-10-01
  * Last Modified: 2023-12-10
- * Description: https://adventofcode.com/2023/day/1
+ * Description: https://adventofcode.com/2023/day/1 - Part Two
+ * Lessons learned: N/A
  */
 
 var keyValuePairs = new Dictionary<string, int>
@@ -37,7 +38,7 @@ foreach (var line in lines)
     total += int.Parse(first + last.ToString());
 }
 
-Console.Write(total);
+Console.Write($"Answer: {total}");
 return;
 
 (int, int) FindLastNumber(string input)
