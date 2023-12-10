@@ -23,16 +23,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="A03 inspected">
-      <change afterPath="$PROJECT_DIR$/ConsoleApp03B/input.txt" afterDir="false" />
+    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="A03B inspected">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp03B/ConsoleApp03B.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03B/ConsoleApp03B.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp03B/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp03B/Input3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03A/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp03B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03B/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp03B/bin/Debug/net6.0/ConsoleApp03B.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03B/bin/Debug/net6.0/ConsoleApp03B.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp03B/bin/Debug/net6.0/ConsoleApp03B.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03B/bin/Debug/net6.0/ConsoleApp03B.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp03B/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03B/obj/Debug/net6.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp04A/ConsoleApp04A.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp04A/ConsoleApp04A.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp04A/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp04A/Input4A.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp04A/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp04A/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp04A/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp04A/bin/Debug/net6.0/ConsoleApp04A.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp04A/bin/Debug/net6.0/ConsoleApp04A.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp04A/bin/Debug/net6.0/ConsoleApp04A.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp04A/bin/Debug/net6.0/ConsoleApp04A.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp04A/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp04A/obj/Debug/net6.0/apphost.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +46,7 @@
     <setting file="file://$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ConsoleApp02B/bin/Debug/net6.0/ConsoleApp02B.runtimeconfig.json" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ConsoleApp03A/bin/Debug/net6.0/ConsoleApp03A.runtimeconfig.json" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ConsoleApp03B/bin/Debug/net6.0/ConsoleApp03B.runtimeconfig.json" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -70,6 +71,7 @@
     ".NET Project.ConsoleApp2.executor": "Debug",
     ".NET Project.ConsoleApp3.executor": "Debug",
     ".NET Project.ConsoleApp3B.executor": "Debug",
+    ".NET Project.ConsoleApp4A.executor": "Debug",
     ".NET Project.ConsoleApp9B.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -91,7 +93,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.ConsoleApp3B">
+  <component name="RunManager" selected=".NET Project.ConsoleApp4A">
     <configuration name="ConsoleApp1" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -449,7 +451,7 @@
       <workItem from="1702213300975" duration="5545000" />
       <workItem from="1702218928765" duration="3424000" />
       <workItem from="1702222443495" duration="243000" />
-      <workItem from="1702242137454" duration="3663000" />
+      <workItem from="1702242137454" duration="4377000" />
     </task>
     <task id="LOCAL−00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -521,7 +523,14 @@
       <option name="presentableId" value="LOCAL−00010" />
       <updated>1702245515720</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL−00011" summary="A03B inspected">
+      <option name="closed" value="true" />
+      <created>1702246097566</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1702246097566</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -549,25 +558,7 @@
     <MESSAGE value="A01 inspected" />
     <MESSAGE value="A02 inspected" />
     <MESSAGE value="A03 inspected" />
-    <option name="LAST_COMMIT_MESSAGE" value="A03 inspected" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ConsoleApp03B/Program.cs</url>
-          <line>12</line>
-          <properties documentPath="C:\repos\AOE23\ConsoleApp03B\Program.cs" initialLine="12" containingFunctionPresentation="">
-            <startOffsets>
-              <option value="286" />
-            </startOffsets>
-            <endOffsets>
-              <option value="326" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="A03B inspected" />
+    <option name="LAST_COMMIT_MESSAGE" value="A03B inspected" />
   </component>
 </project>
