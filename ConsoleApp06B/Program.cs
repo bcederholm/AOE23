@@ -1,6 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-Console.WriteLine("Hello, World!");
+﻿/*
+ * FileName: Program.cs
+ * Author: Benjamin Cederholm
+ * Date Created: 2023-10-06
+ * Last Modified: 2023-12-10
+ * Description: https://adventofcode.com/2023/day/6 - Part Two
+ * Keywords: N/A
+ */
 
 // List<TimeDistance> timeDistances = new List<TimeDistance>
 // {
@@ -17,9 +22,9 @@ Console.WriteLine("Hello, World!");
 //     new TimeDistance { Time = 66, Distance = 1063 },
 // };
 
-List<TimeDistance> timeDistances = new List<TimeDistance>
+var timeDistances = new List<TimeDistance>
 {
-    new TimeDistance { Time = 40829166, Distance = 277133813491063 },
+    new() { Time = 40829166, Distance = 277133813491063 }
 };
 
 foreach (var timeDistance in timeDistances)
@@ -27,14 +32,16 @@ foreach (var timeDistance in timeDistances)
     var winningWays = 0;
     for (var i = 0; i <= timeDistance.Time; i++)
     {
-        var distanceinMillimeters = GetDistanceInMillimeters(timeDistance.Time, i);
-        if (distanceinMillimeters > timeDistance.Distance)
+        var distanceInMillimeters = GetDistanceInMillimeters(timeDistance.Time, i);
+        if (distanceInMillimeters > timeDistance.Distance)
         {
             winningWays++;
         }
     }
-    Console.WriteLine($"winningWays: {winningWays}");
+    Console.WriteLine($"Answer: {winningWays}");
 }
+
+return;
 
 long GetDistanceInMillimeters(long raceTimeInMilliseconds, long pushTimeInMilliseconds)
 {
@@ -43,9 +50,8 @@ long GetDistanceInMillimeters(long raceTimeInMilliseconds, long pushTimeInMillis
     return distanceInMillimeters;
 }
 
-
-public class TimeDistance
+internal class TimeDistance
 {
-    public long Time { get; set; }
-    public long Distance { get; set; }
+    public long Time { get; init; }
+    public long Distance { get; init; }
 }

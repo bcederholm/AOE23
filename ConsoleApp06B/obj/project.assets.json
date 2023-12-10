@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\repos\\AOE23\\ConsoleApp06A\\ConsoleApp06A.csproj",
-      "projectName": "ConsoleApp06A",
-      "projectPath": "C:\\repos\\AOE23\\ConsoleApp06A\\ConsoleApp06A.csproj",
+      "projectUniqueName": "C:\\repos\\AOE23\\ConsoleApp06B\\ConsoleApp06B.csproj",
+      "projectName": "ConsoleApp06B",
+      "projectPath": "C:\\repos\\AOE23\\ConsoleApp06B\\ConsoleApp06B.csproj",
       "packagesPath": "C:\\Users\\Benjamin\\.nuget\\packages\\",
-      "outputPath": "C:\\repos\\AOE23\\ConsoleApp06A\\obj\\",
+      "outputPath": "C:\\repos\\AOE23\\ConsoleApp06B\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Benjamin\\AppData\\Roaming\\NuGet\\NuGet.Config"

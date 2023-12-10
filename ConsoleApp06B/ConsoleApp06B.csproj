@@ -9,10 +9,4 @@
         <RootNamespace>ConsoleApp6A</RootNamespace>
     </PropertyGroup>
 
-    <ItemGroup>
-      <Content Include="..\.dockerignore">
-        <Link>.dockerignore</Link>
-      </Content>
-    </ItemGroup>
-
 </Project>
