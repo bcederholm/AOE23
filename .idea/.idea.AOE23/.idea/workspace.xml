@@ -23,16 +23,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="">
+    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="08A inspected">
+      <change afterPath="$PROJECT_DIR$/ConsoleApp08B/input-lr.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsoleApp08B/input-nodes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp01B/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp02B/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp06B/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp08A/ConsoleApp08A.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp08A/ConsoleApp08A.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp08A/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp08A/Input8A-lr.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp08A/input-lr.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp08A/Input8A-nodes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp08A/input-nodes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp08A/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp08A/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp08B/ConsoleApp08B.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp08B/ConsoleApp08B.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp08B/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp08B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp08B/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp08B/bin/Debug/net6.0/ConsoleApp08B.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp08B/bin/Debug/net6.0/ConsoleApp08B.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp08B/bin/Debug/net6.0/ConsoleApp08B.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp08B/bin/Debug/net6.0/ConsoleApp08B.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp08B/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp08B/obj/Debug/net6.0/apphost.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +82,7 @@
     ".NET Project.ConsoleApp7A.executor": "Debug",
     ".NET Project.ConsoleApp7B.executor": "Debug",
     ".NET Project.ConsoleApp8A.executor": "Debug",
+    ".NET Project.ConsoleApp8B.executor": "Debug",
     ".NET Project.ConsoleApp9B.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -103,7 +104,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.ConsoleApp8A">
+  <component name="RunManager" selected=".NET Project.ConsoleApp8B">
     <configuration name="ConsoleApp1" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -500,7 +501,7 @@
       <workItem from="1702218928765" duration="3424000" />
       <workItem from="1702222443495" duration="243000" />
       <workItem from="1702242137454" duration="15855000" />
-      <workItem from="1702294189384" duration="337000" />
+      <workItem from="1702294189384" duration="1673000" />
     </task>
     <task id="LOCAL−00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -635,7 +636,14 @@
       <option name="presentableId" value="LOCAL−00019" />
       <updated>1702278314452</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL−00020" summary="08A inspected">
+      <option name="closed" value="true" />
+      <created>1702294702977</created>
+      <option name="number" value="LOCAL−00020" />
+      <option name="presentableId" value="LOCAL−00020" />
+      <updated>1702294702977</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -684,6 +692,7 @@
     <MESSAGE value="A07A inspected" />
     <MESSAGE value="A07B inspected" />
     <MESSAGE value="11" />
-    <option name="LAST_COMMIT_MESSAGE" value="11" />
+    <MESSAGE value="08A inspected" />
+    <option name="LAST_COMMIT_MESSAGE" value="08A inspected" />
   </component>
 </project>

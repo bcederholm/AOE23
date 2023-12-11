@@ -1,30 +1,27 @@
-﻿string filePath1 = "C:\\repos\\offside\\ConsoleApp01\\ConsoleApp08A\\Input8A-lr.txt";
-string filePath2 = "C:\\repos\\offside\\ConsoleApp01\\ConsoleApp08A\\Input8A-nodes.txt";
-string[] lines1 = File.ReadAllLines(filePath1);
-string[] lines2 = File.ReadAllLines(filePath2);
+﻿/*
+ * FileName: Program.cs
+ * Author: Benjamin Cederholm
+ * Date Created: 2023-10-08
+ * Last Modified: 2023-12-11
+ * Description: https://adventofcode.com/2023/day/8 - Part Two
+ * Keywords: LCM
+ */
 
+const string filePath1 = "input-lr.txt";
+const string filePath2 = "input-nodes.txt";
+var lines1 = File.ReadAllLines(filePath1);
+var lines2 = File.ReadAllLines(filePath2);
 
 var directions = lines1[0].ToCharArray();
-var nodes = new List<Node>();
-
-foreach (var line in lines2)
-{
-    var cleanedLine = line.Replace("= (", "").Replace(",", "").Replace(")", "");
-    var lineSegments = cleanedLine.Split(" ", StringSplitOptions.RemoveEmptyEntries);
-    nodes.Add(new Node()
-    {
-        Current = lineSegments[0],
-        Left = lineSegments[1],
-        Right = lineSegments[2],
-    });
-}
+var nodes = lines2.Select(line => line.Replace("= (", "")
+    .Replace(",", "")
+    .Replace(")", ""))
+    .Select(cleanedLine => cleanedLine.Split(" ", StringSplitOptions.RemoveEmptyEntries))
+    .Select(lineSegments => new Node { Current = lineSegments[0], Left = lineSegments[1], Right = lineSegments[2] })
+    .ToList();
 
 var nodesEndingWithA = nodes.Where(n => n.Current.Substring(2,1) == "A").ToList();
-
 var nodeDictionary = nodes.ToDictionary(node => node.Current);
-var lowestRecord = 10;
-
-Console.WriteLine($"Start: {DateTime.Now}");
 
 foreach (var nodeEndingWithA in nodesEndingWithA)
 {
@@ -36,7 +33,7 @@ foreach (var nodeEndingWithA in nodesEndingWithA)
         foreach (var direction in directions)
         {
             nodeEndingWithA.Iterations++;
-            var nextNode = nodeDictionary[(direction == 'L') ? currentNode.Left : currentNode.Right];
+            var nextNode = nodeDictionary[direction == 'L' ? currentNode.Left : currentNode.Right];
             currentNode = nodeDictionary[nextNode.Current];
             if (currentNode.Current[2] == 'Z')
             {
@@ -47,29 +44,38 @@ foreach (var nodeEndingWithA in nodesEndingWithA)
     }
 }
 
-var lcmResult = LCM(nodesEndingWithA.Select(n => n.Iterations).ToArray());
+var lcmResult = LcmAggregated(nodesEndingWithA.Select(n => n.Iterations).ToArray());
 
+Console.WriteLine($"Answer: {lcmResult}");
 
-Console.WriteLine($"LCM: {lcmResult}");
+return;
 
-// CREDIT: https://stackoverflow.com/a/6251668/12347616
-static long LCM(long[] numbers)
+// Credit: lcm -> https://www.reddit.com/r/adventofcode/comments/18df7px/2023_day_8_solutions/
+
+static long LcmAggregated(IEnumerable<long> numbers)
 {
-    return numbers.Aggregate(lcm);
+    return numbers.Aggregate(Lcm);
 }
-static long lcm(long a, long b)
+static long Lcm(long a, long b)
 {
-    return Math.Abs(a * b) / GCD(a, b);
-}
-static long GCD(long a, long b)
-{
-    return b == 0 ? a : GCD(b, a % b);
+    return Math.Abs(a * b) / Gcd(a, b);
 }
 
-public class Node
+static long Gcd(long a, long b)
 {
-    public string Current { get; set; }   
-    public string Left { get; set; }
-    public string Right { get; set; }
+    while (true)
+    {
+        if (b == 0) return a;
+        var a1 = a;
+        a = b;
+        b = a1 % b;
+    }
+}
+
+internal class Node
+{
+    public string Current { get; init; } = string.Empty;
+    public string Left { get; init; } = string.Empty;
+    public string Right { get; init; } = string.Empty;
     public long Iterations { get; set; }
 }
