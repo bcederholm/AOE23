@@ -1,25 +1,24 @@
-﻿using System.Diagnostics;
+﻿/*
+ * FileName: Program.cs
+ * Author: Benjamin Cederholm
+ * Date Created: 2023-10-08
+ * Last Modified: 2023-12-11
+ * Description: https://adventofcode.com/2023/day/8 - Part One
+ * Keywords: N/A
+ */
 
-string filePath1 = "C:\\repos\\offside\\ConsoleApp01\\ConsoleApp08A\\Input8A-lr.txt";
-string filePath2 = "C:\\repos\\offside\\ConsoleApp01\\ConsoleApp08A\\Input8A-nodes.txt";
-string[] lines1 = File.ReadAllLines(filePath1);
-string[] lines2 = File.ReadAllLines(filePath2);
-
+const string filePath1 = "input-lr.txt";
+const string filePath2 = "input-nodes.txt";
+var lines1 = File.ReadAllLines(filePath1);
+var lines2 = File.ReadAllLines(filePath2);
 
 var directions = lines1[0].ToCharArray();
-var nodes = new List<Node>();
-
-foreach (var line in lines2)
-{
-    var cleanedLine = line.Replace("= (", "").Replace(",", "").Replace(")", "");
-    var lineSegments = cleanedLine.Split(" ", StringSplitOptions.RemoveEmptyEntries);
-    nodes.Add(new Node()
-    {
-        Current = lineSegments[0],
-        Left = lineSegments[1],
-        Right = lineSegments[2],
-    });
-}
+var nodes = lines2.Select(line => line.Replace("= (", "")
+    .Replace(",", "")
+    .Replace(")", ""))
+    .Select(cleanedLine => cleanedLine.Split(" ", StringSplitOptions.RemoveEmptyEntries))
+    .Select(lineSegments => new Node { Current = lineSegments[0], Left = lineSegments[1], Right = lineSegments[2] })
+    .ToList();
 
 var found = false;
 var current = "AAA";
@@ -40,12 +39,11 @@ while (!found)
     }
 }
 
-Console.WriteLine($"Iterations: {iterations}");
+Console.WriteLine($"Answer: {iterations}");
 
-public class Node
+internal class Node
 {
-    public string Current { get; set; }   
-    public string Left { get; set; }
-    public string Right { get; set; }
-
+    public string? Current { get; init; }   
+    public string? Left { get; init; }
+    public string? Right { get; init; }
 }

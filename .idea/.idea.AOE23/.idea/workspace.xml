@@ -23,13 +23,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="A07B inspected">
-      <change afterPath="$PROJECT_DIR$/ConsoleApp11A/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsoleApp11B/input.txt" afterDir="false" />
+    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AOE23.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AOE23.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp07B/bin/Debug/net6.0/ConsoleApp07B.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp07B/bin/Debug/net6.0/ConsoleApp07B.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp07B/bin/Debug/net6.0/ConsoleApp07B.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp07B/bin/Debug/net6.0/ConsoleApp07B.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01B/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02B/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp06B/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp08A/ConsoleApp08A.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp08A/ConsoleApp08A.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp08A/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp08A/Input8A-lr.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp08A/input-lr.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp08A/Input8A-nodes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp08A/input-nodes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp08A/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp08A/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +81,7 @@
     ".NET Project.ConsoleApp6A.executor": "Debug",
     ".NET Project.ConsoleApp7A.executor": "Debug",
     ".NET Project.ConsoleApp7B.executor": "Debug",
+    ".NET Project.ConsoleApp8A.executor": "Debug",
     ".NET Project.ConsoleApp9B.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -99,7 +103,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.ConsoleApp11B">
+  <component name="RunManager" selected=".NET Project.ConsoleApp8A">
     <configuration name="ConsoleApp1" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -495,7 +499,8 @@
       <workItem from="1702213300975" duration="5545000" />
       <workItem from="1702218928765" duration="3424000" />
       <workItem from="1702222443495" duration="243000" />
-      <workItem from="1702242137454" duration="15241000" />
+      <workItem from="1702242137454" duration="15855000" />
+      <workItem from="1702294189384" duration="337000" />
     </task>
     <task id="LOCAL−00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -623,7 +628,14 @@
       <option name="presentableId" value="LOCAL−00018" />
       <updated>1702250399965</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL−00019" summary="11">
+      <option name="closed" value="true" />
+      <created>1702278314452</created>
+      <option name="number" value="LOCAL−00019" />
+      <option name="presentableId" value="LOCAL−00019" />
+      <updated>1702278314452</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -671,6 +683,7 @@
     <MESSAGE value="A06B inspected" />
     <MESSAGE value="A07A inspected" />
     <MESSAGE value="A07B inspected" />
-    <option name="LAST_COMMIT_MESSAGE" value="A07B inspected" />
+    <MESSAGE value="11" />
+    <option name="LAST_COMMIT_MESSAGE" value="11" />
   </component>
 </project>
