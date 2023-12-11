@@ -9,4 +9,8 @@
         <RootNamespace>ConsoleApp6A</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="obj\Debug\net6.0\" />
+    </ItemGroup>
+
 </Project>
