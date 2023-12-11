@@ -1,11 +1,17 @@
-﻿string filePath1 = "C:\\repos\\AOE23\\ConsoleApp10A\\Input10.txt";
-string[] lines = File.ReadAllLines(filePath1);
+﻿/*
+ * FileName: Program.cs
+ * Author: Benjamin Cederholm
+ * Date Created: 2023-10-10
+ * Last Modified: 2023-12-11
+ * Description: https://adventofcode.com/2023/day/10 - Part One
+ * Keywords: N/A
+ */
 
+const string filePath1 = "input.txt";
+var lines = File.ReadAllLines(filePath1);
 var sPosX = -1; 
 var sPosY = -1; 
-
-char[,] matrix = new char[lines[0].Length, lines.Length];
-
+var matrix = new char[lines[0].Length, lines.Length];
 char[] directions = { '|', '-', 'L', 'J', '7', 'F' };
 
 for (var i = 0; i < lines.Length; i++)
@@ -17,18 +23,18 @@ for (var i = 0; i < lines.Length; i++)
         sPosY = i;
         Console.WriteLine($"S is at {sPosX}, {sPosY}");
     }
-    var lineSplitted = lines[i].ToCharArray();
+    var splitLines = lines[i].ToCharArray();
     
-    for (var j = 0; j < lineSplitted.Length; j++)
+    for (var j = 0; j < splitLines.Length; j++)
     {
-        matrix[j, i] = lineSplitted[j];
+        matrix[j, i] = splitLines[j];
     }
 }
 
+var answer = 0;
 
 foreach (var direction in directions)
 {
-    Console.WriteLine();
     Console.WriteLine($"Direction: {direction}");
     var currentPosX = sPosX;
     var currentPosY = sPosY;
@@ -63,10 +69,14 @@ foreach (var direction in directions)
                     case Movement.North:
                         currentPosY--;
                         break;
-                    default:
+                    case Movement.None:
+                    case Movement.East:
+                    case Movement.West:
                         Console.WriteLine("Unexpected movement");
                         finished = true;
                         break;
+                    default:
+                        throw new ArgumentOutOfRangeException(movement.ToString());
                 }
                 break;
             case '-':
@@ -78,10 +88,14 @@ foreach (var direction in directions)
                     case Movement.West:
                         currentPosX--;
                         break;
-                    default:
+                    case Movement.None:
+                    case Movement.North:
+                    case Movement.South:
                         Console.WriteLine("Unexpected movement");
                         finished = true;
                         break;
+                    default:
+                        throw new ArgumentOutOfRangeException(movement.ToString());
                 }
                 break;
             case 'L':
@@ -95,10 +109,14 @@ foreach (var direction in directions)
                         currentPosY--;
                         movement = Movement.North;
                         break;
-                    default:
+                    case Movement.None:
+                    case Movement.North:
+                    case Movement.East:
                         Console.WriteLine("Unexpected movement");
                         finished = true;
                         break;
+                    default:
+                        throw new ArgumentOutOfRangeException(movement.ToString());
                 }
                 break;
             case 'J':
@@ -112,10 +130,14 @@ foreach (var direction in directions)
                         currentPosY--;
                         movement = Movement.North;
                         break;
-                    default:
+                    case Movement.None:
+                    case Movement.North:
+                    case Movement.West:
                         Console.WriteLine("Unexpected movement");
                         finished = true;
                         break;
+                    default:
+                        throw new ArgumentOutOfRangeException(movement.ToString());
                 }
                 break;
             case '7':
@@ -129,10 +151,14 @@ foreach (var direction in directions)
                         currentPosX--;
                         movement = Movement.West;
                         break;
-                    default:
+                    case Movement.None:
+                    case Movement.South:
+                    case Movement.West:
                         Console.WriteLine("Unexpected movement");
                         finished = true;
                         break;
+                    default:
+                        throw new ArgumentOutOfRangeException(movement.ToString());
                 }
                 break;
             case 'F':
@@ -146,10 +172,14 @@ foreach (var direction in directions)
                         currentPosX++;
                         movement = Movement.East;
                         break;
-                    default:
+                    case Movement.None:
+                    case Movement.East:
+                    case Movement.South:
                         Console.WriteLine("Unexpected movement");
                         finished = true;
                         break;
+                    default:
+                        throw new ArgumentOutOfRangeException(movement.ToString());
                 }
                 break;
             default:
@@ -160,7 +190,7 @@ foreach (var direction in directions)
         if (currentPosX < 0 || currentPosX >= matrix.GetLength(0) || currentPosY < 0 || currentPosY >= matrix.GetLength(1))
         {
             finished = true;
-            Console.WriteLine($"Out of bounds");
+            Console.WriteLine("Out of bounds");
         }
         else
         {
@@ -171,6 +201,7 @@ foreach (var direction in directions)
                 if (movement == initalMovement)
                 {
                     Console.WriteLine($"When initial sign is {direction} hit S at {steps} steps.");
+                    answer = steps / 2;
                 }
                 else
                 {
@@ -179,11 +210,12 @@ foreach (var direction in directions)
             }
         }
     }
+    Console.WriteLine();
 }
 
-Console.WriteLine($"Prepare finished");
+Console.WriteLine($"Answer: {answer}");
 
-enum Movement
+internal enum Movement
 {
     None = default,
     North,
