@@ -23,15 +23,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="A07A inspected">
-      <change afterPath="$PROJECT_DIR$/ConsoleApp07B/input.txt" afterDir="false" />
+    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="A07B inspected">
+      <change afterPath="$PROJECT_DIR$/ConsoleApp11A/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsoleApp11B/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp07B/ConsoleApp07B.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp07B/ConsoleApp07B.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp07B/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp07B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp07B/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AOE23.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AOE23.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp07B/bin/Debug/net6.0/ConsoleApp07B.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp07B/bin/Debug/net6.0/ConsoleApp07B.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp07B/bin/Debug/net6.0/ConsoleApp07B.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp07B/bin/Debug/net6.0/ConsoleApp07B.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp07B/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp07B/obj/Debug/net6.0/apphost.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +66,8 @@
     ".NET Project.ConsoleApp1.executor": "Debug",
     ".NET Project.ConsoleApp10A.executor": "Debug",
     ".NET Project.ConsoleApp10B.executor": "Debug",
+    ".NET Project.ConsoleApp11A.executor": "Debug",
+    ".NET Project.ConsoleApp11B.executor": "Debug",
     ".NET Project.ConsoleApp2.executor": "Debug",
     ".NET Project.ConsoleApp3.executor": "Debug",
     ".NET Project.ConsoleApp3B.executor": "Debug",
@@ -99,7 +99,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.ConsoleApp7B">
+  <component name="RunManager" selected=".NET Project.ConsoleApp11B">
     <configuration name="ConsoleApp1" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -150,6 +150,42 @@
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
       <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="ConsoleApp11A" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/ConsoleApp11A/bin/Debug/net6.0/ConsoleApp11A.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ConsoleApp11A/bin/Debug/net6.0" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ConsoleApp11A/ConsoleApp11A.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="net6.0" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="ConsoleApp11B" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/ConsoleApp11B/bin/Debug/net6.0/ConsoleApp11B.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ConsoleApp11B/bin/Debug/net6.0" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ConsoleApp11B/ConsoleApp11B.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="net6.0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -439,6 +475,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue=".NET Project.ConsoleApp11B" />
+        <item itemvalue=".NET Project.ConsoleApp11A" />
         <item itemvalue=".NET Project.ConsoleApp1" />
       </list>
     </recent_temporary>
@@ -457,7 +495,7 @@
       <workItem from="1702213300975" duration="5545000" />
       <workItem from="1702218928765" duration="3424000" />
       <workItem from="1702222443495" duration="243000" />
-      <workItem from="1702242137454" duration="8116000" />
+      <workItem from="1702242137454" duration="15241000" />
     </task>
     <task id="LOCAL−00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -578,7 +616,14 @@
       <option name="presentableId" value="LOCAL−00017" />
       <updated>1702249608805</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL−00018" summary="A07B inspected">
+      <option name="closed" value="true" />
+      <created>1702250399965</created>
+      <option name="number" value="LOCAL−00018" />
+      <option name="presentableId" value="LOCAL−00018" />
+      <updated>1702250399965</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -625,6 +670,7 @@
     <MESSAGE value="A05B inspected" />
     <MESSAGE value="A06B inspected" />
     <MESSAGE value="A07A inspected" />
-    <option name="LAST_COMMIT_MESSAGE" value="A07A inspected" />
+    <MESSAGE value="A07B inspected" />
+    <option name="LAST_COMMIT_MESSAGE" value="A07B inspected" />
   </component>
 </project>
