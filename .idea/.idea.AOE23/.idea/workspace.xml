@@ -23,15 +23,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="Inspect 98B">
+    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="Inspect 09A">
+      <change afterPath="$PROJECT_DIR$/ConsoleApp09B/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp09A/ConsoleApp09A.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp09A/ConsoleApp09A.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp09A/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp09A/Input9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp09A/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp09A/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp09A/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp09A/bin/Debug/net6.0/ConsoleApp09A.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp09A/bin/Debug/net6.0/ConsoleApp09A.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp09A/bin/Debug/net6.0/ConsoleApp09A.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp09A/bin/Debug/net6.0/ConsoleApp09A.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp09A/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp09A/obj/Debug/net6.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp09B/ConsoleApp09B.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp09B/ConsoleApp09B.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp09B/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp09B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp09B/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp09B/bin/Debug/net6.0/ConsoleApp09B.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp09B/bin/Debug/net6.0/ConsoleApp09B.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp09B/bin/Debug/net6.0/ConsoleApp09B.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp09B/bin/Debug/net6.0/ConsoleApp09B.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp09B/obj/Debug/net6.0/ConsoleApp09B.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp09B/obj/Debug/net6.0/ConsoleApp09B.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp09B/obj/Debug/net6.0/ConsoleApp09B.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp09B/obj/Debug/net6.0/ConsoleApp09B.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp09B/obj/Debug/net6.0/ConsoleApp09B.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp09B/obj/Debug/net6.0/ConsoleApp09B.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +106,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.ConsoleApp9A">
+  <component name="RunManager" selected=".NET Project.ConsoleApp9B">
     <configuration name="ConsoleApp1" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -501,7 +503,7 @@
       <workItem from="1702218928765" duration="3424000" />
       <workItem from="1702222443495" duration="243000" />
       <workItem from="1702242137454" duration="15855000" />
-      <workItem from="1702294189384" duration="2051000" />
+      <workItem from="1702294189384" duration="2447000" />
     </task>
     <task id="LOCAL−00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -650,7 +652,14 @@
       <option name="presentableId" value="LOCAL−00021" />
       <updated>1702295919501</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL−00022" summary="Inspect 09A">
+      <option name="closed" value="true" />
+      <created>1702296318527</created>
+      <option name="number" value="LOCAL−00022" />
+      <option name="presentableId" value="LOCAL−00022" />
+      <updated>1702296318527</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -701,6 +710,7 @@
     <MESSAGE value="11" />
     <MESSAGE value="08A inspected" />
     <MESSAGE value="Inspect 98B" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inspect 98B" />
+    <MESSAGE value="Inspect 09A" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inspect 09A" />
   </component>
 </project>
