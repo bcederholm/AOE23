@@ -1,10 +1,17 @@
-﻿string filePath1 = "C:\\repos\\AOE23\\ConsoleApp10A\\Input10.txt";
-string[] lines = File.ReadAllLines(filePath1);
+﻿/*
+ * FileName: Program.cs
+ * Author: Benjamin Cederholm
+ * Date Created: 2023-10-10
+ * Last Modified: 2023-12-11
+ * Description: https://adventofcode.com/2023/day/10 - Part Two
+ * Keywords: Extended line crossing pattern
+ */
 
+const string filePath1 = "input.txt";
+var lines = File.ReadAllLines(filePath1);
 var sPosX = -1; 
 var sPosY = -1; 
-
-char[,] matrix = new char[lines[0].Length, lines.Length];
+var matrix = new char[lines[0].Length, lines.Length];
 
 for (var i = 0; i < lines.Length; i++)
 {
@@ -15,11 +22,11 @@ for (var i = 0; i < lines.Length; i++)
         sPosY = i;
         Console.WriteLine($"S is at {sPosX}, {sPosY}");
     }
-    var lineSplitted = lines[i].ToCharArray();
+    var splitLines = lines[i].ToCharArray();
     
-    for (var j = 0; j < lineSplitted.Length; j++)
+    for (var j = 0; j < splitLines.Length; j++)
     {
-        var copy = lineSplitted[j];
+        var copy = splitLines[j];
         matrix[j, i] = copy;
     }
 }
@@ -28,19 +35,15 @@ var currentPosX = sPosX;
 var currentPosY = sPosY;
 var finished = false;
 var steps = 0;
-var initialChar = '|';
+const char initialChar = '|';
 var currentChar = initialChar;
-
-var initialMovement = Movement.North;
+const Movement initialMovement = Movement.North;
 var movement = initialMovement;
-
-var pipe = new List<(int, int)>();
-pipe.Add((sPosX, sPosY));
+var pipe = new List<(int, int)> { (sPosX, sPosY) };
 
 while (!finished)
 {
     steps++;
-    Console.Write(currentChar);
     switch (currentChar)
     {
         case '|':
@@ -52,10 +55,13 @@ while (!finished)
                 case Movement.North:
                     currentPosY--;
                     break;
-                default:
+                case Movement.East:
+                case Movement.West:
                     Console.WriteLine("Unexpected movement");
                     finished = true;
-                    break;
+                    break; 
+                default:
+                    throw new ArgumentOutOfRangeException(movement.ToString());
             }
             break;
         case '-':
@@ -67,10 +73,13 @@ while (!finished)
                 case Movement.West:
                     currentPosX--;
                     break;
-                default:
+                case Movement.North:
+                case Movement.South:
                     Console.WriteLine("Unexpected movement");
                     finished = true;
                     break;
+                default:
+                    throw new ArgumentOutOfRangeException(movement.ToString());
             }
             break;
         case 'L':
@@ -84,10 +93,13 @@ while (!finished)
                     currentPosY--;
                     movement = Movement.North;
                     break;
-                default:
+                case Movement.North:
+                case Movement.East:
                     Console.WriteLine("Unexpected movement");
                     finished = true;
                     break;
+                default:
+                    throw new ArgumentOutOfRangeException(movement.ToString());
             }
             break;
         case 'J':
@@ -101,10 +113,13 @@ while (!finished)
                     currentPosY--;
                     movement = Movement.North;
                     break;
-                default:
+                case Movement.North:
+                case Movement.West:
                     Console.WriteLine("Unexpected movement");
                     finished = true;
                     break;
+                default:
+                    throw new ArgumentOutOfRangeException(movement.ToString());
             }
             break;
         case '7':
@@ -118,10 +133,13 @@ while (!finished)
                     currentPosX--;
                     movement = Movement.West;
                     break;
-                default:
+                case Movement.South:
+                case Movement.West:
                     Console.WriteLine("Unexpected movement");
                     finished = true;
                     break;
+                default:
+                    throw new ArgumentOutOfRangeException(movement.ToString());
             }
             break;
         case 'F':
@@ -135,17 +153,20 @@ while (!finished)
                     currentPosX++;
                     movement = Movement.East;
                     break;
-                default:
+                case Movement.East:
+                case Movement.South:
                     Console.WriteLine("Unexpected movement");
                     finished = true;
                     break;
+                default:
+                    throw new ArgumentOutOfRangeException(movement.ToString());
             }
             break;
     }
     if (currentPosX < 0 || currentPosX >= matrix.GetLength(0) || currentPosY < 0 || currentPosY >= matrix.GetLength(1))
     {
         finished = true;
-        Console.WriteLine($"Out of bounds");
+        Console.WriteLine("Out of bounds");
     }
     else
     {
@@ -154,52 +175,39 @@ while (!finished)
         if (currentChar == 'S')
         {
             finished = true;
-            if (movement == initialMovement)
-            {
-                Console.WriteLine($"Hit S at {steps} steps.");
-            }
-            else
-            {
-                Console.WriteLine("Invalid initial direction");
-            }
+            Console.WriteLine(movement == initialMovement ? $"Hit S at {steps} steps." : "Invalid initial direction");
         }
     }
 }
 
 // Replace all junk with .
-for (int yClean = 0; yClean < matrix.GetLength(1); yClean++) {
-    for (int xClean = 0; xClean < matrix.GetLength(0); xClean++)
+for (var yClean = 0; yClean < matrix.GetLength(1); yClean++) {
+    for (var xClean = 0; xClean < matrix.GetLength(0); xClean++)
     {
         if (!pipe.Contains((xClean, yClean)))
         {
             matrix[xClean, yClean] = '.';
         }
-
         if (matrix[xClean, yClean] == 'S')
         {
             matrix[xClean, yClean] = initialChar;
         }
-        
     }
 }
 
-
 var totalInside = 0;
-
-for (int yDot = 0; yDot < matrix.GetLength(1); yDot++) {
-    for (int xDot = 0; xDot < matrix.GetLength(0); xDot++)
+for (var yDot = 0; yDot < matrix.GetLength(1); yDot++) {
+    for (var xDot = 0; xDot < matrix.GetLength(0); xDot++)
     {
         if (matrix[xDot, yDot] == '.')
         {
-            var even = true;
-
             var countUpDown = 0;
             var countUpRight = 0;
             var countUpLeft = 0;
             var countDownLeft = 0;
             var countDownRight = 0;
 
-            for (int xSearch = 0; xSearch < xDot; xSearch++)
+            for (var xSearch = 0; xSearch < xDot; xSearch++)
             {
                 switch (matrix[xSearch, yDot])
                 {
@@ -220,16 +228,14 @@ for (int yDot = 0; yDot < matrix.GetLength(1); yDot++) {
                         break;
                 }
             }
+            
+            // Credit: Crossing line even/odd pattern -> https://www.reddit.com/r/adventofcode/comments/18evyu9/2023_day_10_solutions/
+            // L+7 vs F+J needs to be identified as same line
+            
             countDownLeft -= countUpRight; // Same line
             countDownRight -= countUpLeft; // Same line
-            
             var crossings = countUpDown + countUpRight + countDownLeft + countUpLeft + countDownRight; 
-            if (crossings % 2 == 0) {
-                even = true;
-            } 
-            else {
-                even = false;
-            }          
+            var even = crossings % 2 == 0;          
             
             if (!even)
             {
@@ -240,35 +246,19 @@ for (int yDot = 0; yDot < matrix.GetLength(1); yDot++) {
     }
 }
 
-Console.WriteLine($"Total inside: {totalInside}");
+Console.WriteLine($"Answer: {totalInside}");
 
-
-
-
-
-
-
-
-
-
-
-string output = "C:\\repos\\AOE23\\ConsoleApp10B\\Output10B.txt";
-
-using (StreamWriter writer = new StreamWriter(output)) {
-    for (int i = 0; i < matrix.GetLength(1); i++) {
-        for (int j = 0; j < matrix.GetLength(0); j++) {
-            writer.Write(matrix[j, i]);
-        }
-        writer.WriteLine();
+const string output = "output.txt";
+using var writer = new StreamWriter(output);
+for (var i = 0; i < matrix.GetLength(1); i++) {
+    for (var j = 0; j < matrix.GetLength(0); j++) {
+        writer.Write(matrix[j, i]);
     }
+    writer.WriteLine();
 }
 
-
-Console.WriteLine($"Done");
-
-enum Movement
+internal enum Movement
 {
-    None = default,
     North,
     East,
     South,

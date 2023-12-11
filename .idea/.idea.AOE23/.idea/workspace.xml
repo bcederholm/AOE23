@@ -23,16 +23,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="Inspect">
+    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="Inspect 10A">
+      <change afterPath="$PROJECT_DIR$/ConsoleApp10B/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp10A/ConsoleApp10A.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10A/ConsoleApp10A.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp10A/Input10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10A/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp10A/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10A/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp10A/bin/Debug/net6.0/ConsoleApp10A.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10A/bin/Debug/net6.0/ConsoleApp10A.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp10A/bin/Debug/net6.0/ConsoleApp10A.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10A/bin/Debug/net6.0/ConsoleApp10A.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp10A/obj/Debug/net6.0/ConsoleApp10A.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10A/obj/Debug/net6.0/ConsoleApp10A.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp10A/obj/Debug/net6.0/ConsoleApp10A.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10A/obj/Debug/net6.0/ConsoleApp10A.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp10A/obj/Debug/net6.0/ConsoleApp10A.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10A/obj/Debug/net6.0/ConsoleApp10A.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp10A/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp10B/ConsoleApp10B.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10B/ConsoleApp10B.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp10B/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp10B/Output10B.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp10B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10B/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp10B/bin/Debug/net6.0/ConsoleApp10B.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10B/bin/Debug/net6.0/ConsoleApp10B.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp10B/bin/Debug/net6.0/ConsoleApp10B.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10B/bin/Debug/net6.0/ConsoleApp10B.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp10B/obj/Debug/net6.0/ConsoleApp10B.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10B/obj/Debug/net6.0/ConsoleApp10B.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp10B/obj/Debug/net6.0/ConsoleApp10B.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10B/obj/Debug/net6.0/ConsoleApp10B.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp10B/obj/Debug/net6.0/ConsoleApp10B.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10B/obj/Debug/net6.0/ConsoleApp10B.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp10B/obj/Debug/net6.0/ref/ConsoleApp10B.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10B/obj/Debug/net6.0/ref/ConsoleApp10B.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp10B/obj/Debug/net6.0/refint/ConsoleApp10B.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10B/obj/Debug/net6.0/refint/ConsoleApp10B.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +111,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Project.ConsoleApp10A">
+  <component name="RunManager" selected=".NET Project.ConsoleApp10B">
     <configuration name="ConsoleApp1" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -503,6 +509,7 @@
       <workItem from="1702222443495" duration="243000" />
       <workItem from="1702242137454" duration="15855000" />
       <workItem from="1702294189384" duration="3424000" />
+      <workItem from="1702297782901" duration="1058000" />
     </task>
     <task id="LOCAL−00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -665,7 +672,14 @@
       <option name="presentableId" value="LOCAL−00023" />
       <updated>1702296648332</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL−00024" summary="Inspect 10A">
+      <option name="closed" value="true" />
+      <created>1702297861265</created>
+      <option name="number" value="LOCAL−00024" />
+      <option name="presentableId" value="LOCAL−00024" />
+      <updated>1702297861265</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -718,6 +732,7 @@
     <MESSAGE value="Inspect 98B" />
     <MESSAGE value="Inspect 09A" />
     <MESSAGE value="Inspect 09B" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inspect 09B" />
+    <MESSAGE value="Inspect 10A" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inspect 10A" />
   </component>
 </project>
