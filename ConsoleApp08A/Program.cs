@@ -1,7 +1,7 @@
 ﻿/*
  * FileName: Program.cs
  * Author: Benjamin Cederholm
- * Date Created: 2023-10-08
+ * Date Created: 2023-12-08
  * Last Modified: 2023-12-11
  * Description: https://adventofcode.com/2023/day/8 - Part One
  * Keywords: N/A

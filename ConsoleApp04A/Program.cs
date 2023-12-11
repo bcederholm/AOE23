@@ -1,7 +1,7 @@
 ﻿/*
  * FileName: Program.cs
  * Author: Benjamin Cederholm
- * Date Created: 2023-10-04
+ * Date Created: 2023-12-04
  * Last Modified: 2023-12-10
  * Description: https://adventofcode.com/2023/day/4 - Part One
  * Keywords: Linq

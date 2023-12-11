@@ -1,13 +1,13 @@
 ﻿/*
  * FileName: Program.cs
  * Author: Benjamin Cederholm
- * Date Created: 2023-10-11
+ * Date Created: 2023-12-11
  * Last Modified: 2023-12-11
  * Description: https://adventofcode.com/2023/day/11 - Part One (1h 0m)
  * Keywords: Tuple
  */
 
-const string filePath1 = "input.txt";
+string filePath1 = "input.txt";
 var lines = File.ReadAllLines(filePath1);
 var linesExpandedY = new List<string>();
 var columnsWithGalaxy = new List<int>();

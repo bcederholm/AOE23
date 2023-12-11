@@ -25,14 +25,85 @@
   <component name="ChangeListManager">
     <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AOE23.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AOE23.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01B/bin/Debug/net6.0/ConsoleApp01B.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/bin/Debug/net6.0/ConsoleApp01B.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01B/bin/Debug/net6.0/ConsoleApp01B.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/bin/Debug/net6.0/ConsoleApp01B.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp01B/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp01B/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp01B/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02B/bin/Debug/net6.0/ConsoleApp02B.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/bin/Debug/net6.0/ConsoleApp02B.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp02B/bin/Debug/net6.0/ConsoleApp02B.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/bin/Debug/net6.0/ConsoleApp02B.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp02B/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp02B/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp02B/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp03A/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03A/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp03A/bin/Debug/net6.0/ConsoleApp03A.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03A/bin/Debug/net6.0/ConsoleApp03A.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp03A/bin/Debug/net6.0/ConsoleApp03A.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03A/bin/Debug/net6.0/ConsoleApp03A.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp03A/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03A/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp03A/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03A/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp03B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03B/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp03B/bin/Debug/net6.0/ConsoleApp03B.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03B/bin/Debug/net6.0/ConsoleApp03B.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp03B/bin/Debug/net6.0/ConsoleApp03B.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03B/bin/Debug/net6.0/ConsoleApp03B.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp03B/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03B/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp03B/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp03B/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp04A/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp04A/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp04A/bin/Debug/net6.0/ConsoleApp04A.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp04A/bin/Debug/net6.0/ConsoleApp04A.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp04A/bin/Debug/net6.0/ConsoleApp04A.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp04A/bin/Debug/net6.0/ConsoleApp04A.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp04A/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp04A/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp04A/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp04A/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp04B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp04B/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp04B/bin/Debug/net6.0/ConsoleApp04B.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp04B/bin/Debug/net6.0/ConsoleApp04B.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp04B/bin/Debug/net6.0/ConsoleApp04B.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp04B/bin/Debug/net6.0/ConsoleApp04B.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp04B/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp04B/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp04B/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp04B/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05A/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05A/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05A/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05A/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05A/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05A/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05B/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05B/bin/Debug/net6.0/ConsoleApp05B.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05B/bin/Debug/net6.0/ConsoleApp05B.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05B/bin/Debug/net6.0/ConsoleApp05B.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05B/bin/Debug/net6.0/ConsoleApp05B.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05B/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05B/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp05B/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp05B/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp06B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp06B/bin/Debug/net6.0/ConsoleApp06B.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/bin/Debug/net6.0/ConsoleApp06B.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp06B/bin/Debug/net6.0/ConsoleApp06B.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/bin/Debug/net6.0/ConsoleApp06B.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp06B/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp06B/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp06B/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp11A/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp07A/ConsoleApp07A.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp07A/ConsoleApp07A.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp07A/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp07A/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp07A/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp07A/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp07A/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp07A/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp07A/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp07B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp07B/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp07B/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp07B/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp07B/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp07B/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp08A/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp08A/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp08A/bin/Debug/net6.0/ConsoleApp08A.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp08A/bin/Debug/net6.0/ConsoleApp08A.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp08A/bin/Debug/net6.0/ConsoleApp08A.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp08A/bin/Debug/net6.0/ConsoleApp08A.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp08A/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp08A/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp08A/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp08A/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp08B/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp08B/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp08B/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp08B/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp09A/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp09A/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp09A/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp09A/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp09A/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp09A/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp09B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp09B/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp09B/bin/Debug/net6.0/ConsoleApp09B.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp09B/bin/Debug/net6.0/ConsoleApp09B.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp09B/bin/Debug/net6.0/ConsoleApp09B.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp09B/bin/Debug/net6.0/ConsoleApp09B.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp09B/obj/Debug/net6.0/ConsoleApp09B.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp09B/obj/Debug/net6.0/ConsoleApp09B.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp09B/obj/Debug/net6.0/ConsoleApp09B.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp09B/obj/Debug/net6.0/ConsoleApp09B.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp09B/obj/Debug/net6.0/ref/ConsoleApp09B.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp09B/obj/Debug/net6.0/ref/ConsoleApp09B.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp09B/obj/Debug/net6.0/refint/ConsoleApp09B.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp09B/obj/Debug/net6.0/refint/ConsoleApp09B.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp09B/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp09B/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp09B/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp09B/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp10A/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10A/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp10A/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10A/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp10A/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10A/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp10B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10B/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp10B/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10B/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp10B/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10B/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp11A/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp11A/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp11B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp11B/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -506,6 +577,7 @@
       <workItem from="1702298959982" duration="287000" />
       <workItem from="1702299281118" duration="63000" />
       <workItem from="1702299346951" duration="404000" />
+      <workItem from="1702301593930" duration="786000" />
     </task>
     <task id="LOCAL−00001" summary="Init commit">
       <option name="closed" value="true" />

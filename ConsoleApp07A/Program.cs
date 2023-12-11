@@ -1,7 +1,7 @@
 ﻿/*
  * FileName: Program.cs
  * Author: Benjamin Cederholm
- * Date Created: 2023-10-07
+ * Date Created: 2023-12-07
  * Last Modified: 2023-12-10
  * Description: https://adventofcode.com/2023/day/7 - Part One
  * Keywords: Poker

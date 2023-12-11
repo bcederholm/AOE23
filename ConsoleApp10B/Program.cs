@@ -1,7 +1,7 @@
 ﻿/*
  * FileName: Program.cs
  * Author: Benjamin Cederholm
- * Date Created: 2023-10-10
+ * Date Created: 2023-12-10
  * Last Modified: 2023-12-11
  * Description: https://adventofcode.com/2023/day/10 - Part Two
  * Keywords: Extended line crossing pattern
