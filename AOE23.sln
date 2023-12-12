@@ -38,6 +38,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp11A", "ConsoleApp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp11B", "ConsoleApp11B\ConsoleApp11B.csproj", "{069C2C02-1F31-4BC3-9BBC-3AF69911429B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp12A", "ConsoleApp12A\ConsoleApp12A.csproj", "{06E7AA6B-131B-4565-8591-9DA895DE975E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp12B", "ConsoleApp12B\ConsoleApp12B.csproj", "{0243EDEF-CE8A-40CD-9859-5C0F11547682}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -120,5 +124,13 @@ Global
 		{069C2C02-1F31-4BC3-9BBC-3AF69911429B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{069C2C02-1F31-4BC3-9BBC-3AF69911429B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{069C2C02-1F31-4BC3-9BBC-3AF69911429B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06E7AA6B-131B-4565-8591-9DA895DE975E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06E7AA6B-131B-4565-8591-9DA895DE975E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06E7AA6B-131B-4565-8591-9DA895DE975E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06E7AA6B-131B-4565-8591-9DA895DE975E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0243EDEF-CE8A-40CD-9859-5C0F11547682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0243EDEF-CE8A-40CD-9859-5C0F11547682}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0243EDEF-CE8A-40CD-9859-5C0F11547682}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0243EDEF-CE8A-40CD-9859-5C0F11547682}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

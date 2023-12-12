@@ -7,7 +7,7 @@
  * Keywords: Tuple
  */
 
-string filePath1 = "input.txt";
+const string filePath1 = "input.txt";
 var lines = File.ReadAllLines(filePath1);
 var linesExpandedY = new List<string>();
 var columnsWithGalaxy = new List<int>();
