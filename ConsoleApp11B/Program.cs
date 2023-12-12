@@ -3,7 +3,7 @@
  * Author: Benjamin Cederholm
  * Date Created: 2023-12-11
  * Last Modified: 2023-12-11
- * Description: https://adventofcode.com/2023/day/11 - Part Two (1h 0m)
+ * Description: https://adventofcode.com/2023/day/11 - Part Two
  * Keywords: N/A
  */
 

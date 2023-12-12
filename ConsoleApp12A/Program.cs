@@ -3,7 +3,7 @@
  * Author: Benjamin Cederholm
  * Date Created: 2023-12-12
  * Last Modified: 2023-12-12
- * Description: https://adventofcode.com/2023/day/12 - Part One (4h m)
+ * Description: https://adventofcode.com/2023/day/12 - Part One
  * Keywords: Brute force, 2^, Regex, https://regex101.com/
  */
 
@@ -35,8 +35,6 @@ for (var l = 0; l < lines.Length; l++)
     var unknownPositionsCount = unknownPositions.Count;
     var numCombinations = 1 << unknownPositionsCount; // 2^numItems
     var matches = 0;
-    
-    // Credit: Rider AI Assistant
     var pattern = groupSizes.Select(int.Parse).Aggregate(@"^[\\.]*", (current, numOfHashes) => current + $@"(#){{{numOfHashes}}}[\.]+"); // start with a dot (optional)
     pattern = RemoveLastOccurrence(pattern, @"[\.]+") + @"[\\.]*$"; // end with a dot (optional)
     

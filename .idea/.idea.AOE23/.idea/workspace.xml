@@ -26,19 +26,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ConsoleApp12A/ConsoleApp12A.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsoleApp12A/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsoleApp12A/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsoleApp12B/ConsoleApp12B.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsoleApp12B/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsoleApp12B/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AOE23.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AOE23.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp10A/bin/Debug/net6.0/ConsoleApp10A.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10A/bin/Debug/net6.0/ConsoleApp10A.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp10A/bin/Debug/net6.0/ConsoleApp10A.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10A/bin/Debug/net6.0/ConsoleApp10A.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp10A/obj/Debug/net6.0/ConsoleApp10A.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10A/obj/Debug/net6.0/ConsoleApp10A.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp10A/obj/Debug/net6.0/ConsoleApp10A.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10A/obj/Debug/net6.0/ConsoleApp10A.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp10B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp10B/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp11A/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp11A/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp11B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp11B/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp12A/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp12A/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp12B/ConsoleApp12B.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp12B/ConsoleApp12B.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp12B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp12B/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp12B/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp12B/input.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +44,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7641a1a0695522e81971758464776ba68659afdcd53575f6917f7593181d9345/Dictionary.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -77,6 +73,7 @@
     &quot;.NET Project.ConsoleApp11A.executor&quot;: &quot;Debug&quot;,
     &quot;.NET Project.ConsoleApp11B.executor&quot;: &quot;Debug&quot;,
     &quot;.NET Project.ConsoleApp12A.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp12B.executor&quot;: &quot;Debug&quot;,
     &quot;.NET Project.ConsoleApp2.executor&quot;: &quot;Debug&quot;,
     &quot;.NET Project.ConsoleApp3.executor&quot;: &quot;Debug&quot;,
     &quot;.NET Project.ConsoleApp3B.executor&quot;: &quot;Debug&quot;,
@@ -112,7 +109,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Project.ConsoleApp12A">
+  <component name="RunManager" selected=".NET Project.ConsoleApp12B">
     <configuration name="ConsoleApp1" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -556,7 +553,8 @@
       <workItem from="1702358282521" duration="9524000" />
       <workItem from="1702381440792" duration="1318000" />
       <workItem from="1702385502841" duration="3067000" />
-      <workItem from="1702391305020" duration="10069000" />
+      <workItem from="1702391305020" duration="15072000" />
+      <workItem from="1702418176757" duration="711000" />
     </task>
     <task id="LOCAL−00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -754,7 +752,14 @@
       <option name="presentableId" value="LOCAL−00028" />
       <updated>1702304264306</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL−00029" summary="12A">
+      <option name="closed" value="true" />
+      <created>1702402279209</created>
+      <option name="number" value="LOCAL−00029" />
+      <option name="presentableId" value="LOCAL−00029" />
+      <updated>1702402279209</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -787,7 +792,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Rename" />
     <MESSAGE value="Merge" />
     <MESSAGE value="10A" />
     <MESSAGE value="10B" />
@@ -812,7 +816,8 @@
     <MESSAGE value="Inspect 11" />
     <MESSAGE value="Inspect" />
     <MESSAGE value="Comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comment" />
+    <MESSAGE value="12A" />
+    <option name="LAST_COMMIT_MESSAGE" value="12A" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -822,10 +827,10 @@
           <line>19</line>
           <properties documentPath="C:\repos\AOE23\ConsoleApp11A\Program.cs" initialLine="19" containingFunctionPresentation="">
             <startOffsets>
-              <option value="476" />
+              <option value="468" />
             </startOffsets>
             <endOffsets>
-              <option value="501" />
+              <option value="493" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />

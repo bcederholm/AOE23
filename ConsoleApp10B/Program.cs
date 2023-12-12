@@ -231,7 +231,6 @@ for (var yDot = 0; yDot < matrix.GetLength(1); yDot++) {
             
             // Credit: Crossing line even/odd pattern -> https://www.reddit.com/r/adventofcode/comments/18evyu9/2023_day_10_solutions/
             // L+7 vs F+J needs to be identified as same line
-            
             countDownLeft -= countUpRight; // Same line
             countDownRight -= countUpLeft; // Same line
             var crossings = countUpDown + countUpRight + countDownLeft + countUpLeft + countDownRight; 
