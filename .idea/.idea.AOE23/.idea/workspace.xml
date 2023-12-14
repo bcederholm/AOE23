@@ -9,6 +9,7 @@
     <projectFile>ConsoleApp13A/ConsoleApp13A.csproj</projectFile>
     <projectFile>ConsoleApp13B/ConsoleApp13B.csproj</projectFile>
     <projectFile>ConsoleApp14A/ConsoleApp14A.csproj</projectFile>
+    <projectFile>ConsoleApp14B/ConsoleApp14B.csproj</projectFile>
     <projectFile>ConsoleApp2/ConsoleApp2.csproj</projectFile>
     <projectFile>ConsoleApp3/ConsoleApp3.csproj</projectFile>
     <projectFile>ConsoleApp3B/ConsoleApp3B.csproj</projectFile>
@@ -29,9 +30,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ConsoleApp14A/ConsoleApp14A.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsoleApp14A/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsoleApp14A/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsoleApp14B/ConsoleApp14B.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsoleApp14B/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsoleApp14B/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AOE23.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AOE23.sln" afterDir="false" />
     </list>
@@ -68,55 +69,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.ConsoleApp1.executor": "Debug",
-    ".NET Project.ConsoleApp10A.executor": "Debug",
-    ".NET Project.ConsoleApp10B.executor": "Debug",
-    ".NET Project.ConsoleApp11A.executor": "Debug",
-    ".NET Project.ConsoleApp11B.executor": "Debug",
-    ".NET Project.ConsoleApp12A.executor": "Debug",
-    ".NET Project.ConsoleApp12B.executor": "Debug",
-    ".NET Project.ConsoleApp13A.executor": "Debug",
-    ".NET Project.ConsoleApp13B.executor": "Debug",
-    ".NET Project.ConsoleApp14A.executor": "Debug",
-    ".NET Project.ConsoleApp2.executor": "Debug",
-    ".NET Project.ConsoleApp3.executor": "Debug",
-    ".NET Project.ConsoleApp3B.executor": "Debug",
-    ".NET Project.ConsoleApp4A.executor": "Debug",
-    ".NET Project.ConsoleApp4B.executor": "Debug",
-    ".NET Project.ConsoleApp5A.executor": "Debug",
-    ".NET Project.ConsoleApp5B.executor": "Debug",
-    ".NET Project.ConsoleApp6A.executor": "Debug",
-    ".NET Project.ConsoleApp7A.executor": "Debug",
-    ".NET Project.ConsoleApp7B.executor": "Debug",
-    ".NET Project.ConsoleApp8A.executor": "Debug",
-    ".NET Project.ConsoleApp8B.executor": "Debug",
-    ".NET Project.ConsoleApp9A.executor": "Debug",
-    ".NET Project.ConsoleApp9B.executor": "Debug",
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.ConsoleApp1.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp10A.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp10B.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp11A.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp11B.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp12A.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp12B.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp13A.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp13B.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp14A.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp14B.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp2.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp3.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp3B.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp4A.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp4B.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp5A.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp5B.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp6A.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp7A.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp7B.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp8A.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp8B.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp9A.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp9B.executor&quot;: &quot;Debug&quot;,
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\Benjamin\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Benjamin\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\Benjamin\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Benjamin\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Benjamin\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Benjamin\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected=".NET Project.ConsoleApp14A">
+}</component>
+  <component name="RunManager" selected=".NET Project.ConsoleApp14B">
     <configuration name="ConsoleApp1" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -288,6 +290,24 @@
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/ConsoleApp14A/ConsoleApp14A.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="ConsoleApp14B" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ConsoleApp14B/ConsoleApp14B.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -620,7 +640,7 @@
       <workItem from="1702463596772" duration="6438000" />
       <workItem from="1702482284756" duration="1072000" />
       <workItem from="1702490116776" duration="15699000" />
-      <workItem from="1702539185474" duration="6756000" />
+      <workItem from="1702539185474" duration="13252000" />
     </task>
     <task id="LOCAL−00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -839,7 +859,14 @@
       <option name="presentableId" value="LOCAL−00031" />
       <updated>1702512021951</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL−00032" summary="14A">
+      <option name="closed" value="true" />
+      <created>1702552031833</created>
+      <option name="number" value="LOCAL−00032" />
+      <option name="presentableId" value="LOCAL−00032" />
+      <updated>1702552031833</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -872,7 +899,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="10B" />
     <MESSAGE value="A01 inspected" />
     <MESSAGE value="A02 inspected" />
     <MESSAGE value="A03 inspected" />
@@ -897,7 +923,8 @@
     <MESSAGE value="12A" />
     <MESSAGE value="12B" />
     <MESSAGE value="13A" />
-    <option name="LAST_COMMIT_MESSAGE" value="13A" />
+    <MESSAGE value="14A" />
+    <option name="LAST_COMMIT_MESSAGE" value="14A" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
