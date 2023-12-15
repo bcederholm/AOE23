@@ -4,12 +4,12 @@
  * Date Created: 2023-12-15
  * Last Modified: 2023-12-15
  * Description: https://adventofcode.com/2023/day/15 - Part One
- * Keywords: N/A
+ * Keywords: ASCII
  */
 
 var fileLines = File.ReadAllLines("input.txt");
 
-var segments = fileLines[0].Split(',', StringSplitOptions.None);
+var segments = fileLines[0].Split(',');
 var totalValue = 0;
 foreach (var segment in segments)
 {
