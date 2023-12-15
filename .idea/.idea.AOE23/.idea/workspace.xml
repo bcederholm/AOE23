@@ -10,6 +10,7 @@
     <projectFile>ConsoleApp13B/ConsoleApp13B.csproj</projectFile>
     <projectFile>ConsoleApp14A/ConsoleApp14A.csproj</projectFile>
     <projectFile>ConsoleApp14B/ConsoleApp14B.csproj</projectFile>
+    <projectFile>ConsoleApp15A/ConsoleApp15A.csproj</projectFile>
     <projectFile>ConsoleApp2/ConsoleApp2.csproj</projectFile>
     <projectFile>ConsoleApp3/ConsoleApp3.csproj</projectFile>
     <projectFile>ConsoleApp3B/ConsoleApp3B.csproj</projectFile>
@@ -30,11 +31,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ConsoleApp14B/ConsoleApp14B.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsoleApp14B/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsoleApp14B/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsoleApp15A/ConsoleApp15A.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsoleApp15A/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsoleApp15A/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AOE23.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AOE23.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp14B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp14B/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,9 +48,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7641a1a0695522e81971758464776ba68659afdcd53575f6917f7593181d9345/Dictionary.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/767db1e17d404f86c3c73c54c6b20b5ff9ec43b79ef47681ae34b40a6852cf9/Where.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/767db1e17d404f86c3c73c54c6b20b5ff9ec43b79ef47681ae34b40a6852cf9/Where.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b2c3e28468b2a9ae5485968818c48fd40338a6b8ae1295f29a355225a8d238/First.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd6261fae937ba8f9a94e40e09319529f8a77ea7c5438cb971c868a26cb986/Select.SpeedOpt.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd6261fae937ba8f9a94e40e09319529f8a77ea7c5438cb971c868a26cb986/Select.SpeedOpt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ConsoleApp01B/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -82,6 +84,7 @@
     &quot;.NET Project.ConsoleApp13B.executor&quot;: &quot;Debug&quot;,
     &quot;.NET Project.ConsoleApp14A.executor&quot;: &quot;Debug&quot;,
     &quot;.NET Project.ConsoleApp14B.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp15A.executor&quot;: &quot;Debug&quot;,
     &quot;.NET Project.ConsoleApp2.executor&quot;: &quot;Debug&quot;,
     &quot;.NET Project.ConsoleApp3.executor&quot;: &quot;Debug&quot;,
     &quot;.NET Project.ConsoleApp3B.executor&quot;: &quot;Debug&quot;,
@@ -118,7 +121,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Project.ConsoleApp14B">
+  <component name="RunManager" selected=".NET Project.ConsoleApp15A">
     <configuration name="ConsoleApp1" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -308,6 +311,24 @@
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/ConsoleApp14B/ConsoleApp14B.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="ConsoleApp15A" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ConsoleApp15A/ConsoleApp15A.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -641,6 +662,9 @@
       <workItem from="1702482284756" duration="1072000" />
       <workItem from="1702490116776" duration="15699000" />
       <workItem from="1702539185474" duration="13252000" />
+      <workItem from="1702565007217" duration="276000" />
+      <workItem from="1702650092070" duration="1904000" />
+      <workItem from="1702653114737" duration="606000" />
     </task>
     <task id="LOCAL−00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -866,7 +890,14 @@
       <option name="presentableId" value="LOCAL−00032" />
       <updated>1702552031833</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL−00033" summary="14B WIP">
+      <option name="closed" value="true" />
+      <created>1702565275873</created>
+      <option name="number" value="LOCAL−00033" />
+      <option name="presentableId" value="LOCAL−00033" />
+      <updated>1702565275873</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -899,7 +930,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="A01 inspected" />
     <MESSAGE value="A02 inspected" />
     <MESSAGE value="A03 inspected" />
     <MESSAGE value="A03B inspected" />
@@ -924,7 +954,8 @@
     <MESSAGE value="12B" />
     <MESSAGE value="13A" />
     <MESSAGE value="14A" />
-    <option name="LAST_COMMIT_MESSAGE" value="14A" />
+    <MESSAGE value="14B WIP" />
+    <option name="LAST_COMMIT_MESSAGE" value="14B WIP" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
