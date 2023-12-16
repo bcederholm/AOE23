@@ -4,7 +4,7 @@
  * Date Created: 2023-12-14
  * Last Modified: 2023-12-14
  * Description: https://adventofcode.com/2023/day/14 - Part Two
- * Keywords: N/A                  *** NOT SOLVED ***
+ * Keywords: N/A         *** TO SLOW - NOT SOLVED (NO STAR) ***
  */
 
 var fileLines = File.ReadAllLines("input.txt");

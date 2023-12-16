@@ -7,7 +7,8 @@
  * Keywords: N/A
  */
 
-// Find hint here.. https://www.reddit.com/r/adventofcode/comments/18h940b/2023_day_13_solutions/
+// Found hint here about focus on lines with one char difference
+// https://www.reddit.com/r/adventofcode/comments/18h940b/2023_day_13_solutions/
 
 var fileLines = File.ReadAllLines("input.txt");
 
@@ -37,82 +38,157 @@ foreach (var line in fileLines)
     }
 }
 
-
 // Final segment
 segments.Add(new Segment(segmentId, coordinates));
 
-var value = 0;
-foreach (var segmentForLoop in segments)
+var totalValue = 0;
+foreach (var segment in segments)
 {
-
-    foreach (var coordinateForLoop in segmentForLoop.Coordinates)
+    // Identify lines with one char difference
+    var compared = new List<(int y1, int y2, int pos)>();
+    var yValues = segment.Coordinates.Select(c => c.Y).Distinct().ToArray();
+    foreach (var y1 in yValues)
     {
-        Console.WriteLine($"segmentForLoop {segmentForLoop.Id} {coordinateForLoop.X} {coordinateForLoop.Y}");
-        var segment = new Segment(segmentForLoop.Id, segmentForLoop.Coordinates.Select(c => new Coordinate(c.X, c.Y, c.Sign)).ToList());
-        var coordinate = segment.Coordinates.First(c => c.X == coordinateForLoop.X && c.Y == coordinateForLoop.Y);
-        coordinate.Sign = coordinate.Sign == '#' ? '.' : '#';
-
-        // Scan horizontally
-        var yValues = segment.Coordinates.Select(c => c.Y).Distinct().ToArray();
-        foreach (var y in yValues)
+        foreach (var y2 in yValues)
         {
-
-            if (y > 0)
+            if (y1 == y2 || compared.Any(c => c.y1 == y2 && c.y2 == y1))
             {
-                var earlierY = y - 1;
-                var laterY = y;
-                var firstLine = segment.Coordinates
-                    .Where(c => c.Y == earlierY)
-                    .OrderBy(c => c.X)
-                    .Aggregate("", (current, c) => current + c.Sign);
+                continue;
+            }
 
-                var secondLine = segment.Coordinates
-                    .Where(c => c.Y == laterY)
-                    .OrderBy(c => c.X)
-                    .Aggregate("", (current, c) => current + c.Sign);
+            var firstLine = segment.Coordinates
+                .Where(c => c.Y == y1)
+                .OrderBy(c => c.X)
+                .Aggregate("", (current, c) => current + c.Sign);
 
-                if (firstLine == secondLine)
+            var secondLine = segment.Coordinates
+                .Where(c => c.Y == y2)
+                .OrderBy(c => c.X)
+                .Aggregate("", (current, c) => current + c.Sign);
+
+            var pos = GetDifferingCharPosition(firstLine, secondLine);
+            if (pos == -1)
+            {
+                continue;
+            }
+
+            Console.WriteLine(
+                $"s: {segment.Id}, y1: {y1}, y2: {y2} Found match: {firstLine} and {secondLine} on position {pos}");
+            compared.Add((y1, y2, pos));
+            break;
+        }
+    }
+
+    int[] swipes = { 1, 2 };
+
+    // Determine of change of character creates line of reflection with segment scan, keep the highest value
+    var comparisonValue = 0;
+    foreach (var c in compared)
+    {
+        foreach (var swipe in swipes)
+        {
+            var segmentCopy = new Segment(segment.Id, segment.Coordinates);
+
+            switch (swipe)
+            {
+                case 1:
                 {
-                    var match = true;
-                    while (match)
-                    {
-                        earlierY--;
-                        laterY++;
+                    var currentSign = segmentCopy.Coordinates.First(co => co.Y == c.y1 && co.X == c.pos).Sign;
+                    segmentCopy.Coordinates.First(co => co.Y == c.y1 && co.X == c.pos).Sign = currentSign == '#' ? '.' : '#';
+                    break;
+                }
+                case 2:
+                {
+                    var currentSign = segmentCopy.Coordinates.First(co => co.Y == c.y2 && co.X == c.pos).Sign;
+                    segmentCopy.Coordinates.First(co => co.Y == c.y2 && co.X == c.pos).Sign = currentSign == '#' ? '.' : '#';
+                    break;
+                }
+            }
+            
+            var yValuesForComparison = segmentCopy.Coordinates.Select(c => c.Y).Distinct().ToArray();
+            foreach (var y in yValuesForComparison)
+            {
+                if (y > 0)
+                {
+                    var earlierY = y - 1;
+                    var laterY = y;
+                    var firstLine = segmentCopy.Coordinates
+                        .Where(c => c.Y == earlierY)
+                        .OrderBy(c => c.X)
+                        .Aggregate("", (current, c) => current + c.Sign);
 
-                        if (earlierY < 0 || laterY > segment.Coordinates.Max(c => c.Y))
+                    var secondLine = segmentCopy.Coordinates
+                        .Where(c => c.Y == laterY)
+                        .OrderBy(c => c.X)
+                        .Aggregate("", (current, c) => current + c.Sign);
+
+                    if (firstLine == secondLine)
+                    {
+                        var match = true;
+                        while (match)
                         {
+                            earlierY--;
+                            laterY++;
+
+                            if (earlierY < 0 || laterY > segmentCopy.Coordinates.Max(c => c.Y))
+                            {
+                                break;
+                            }
+
+                            var earlier = segmentCopy.Coordinates
+                                .Where(c => c.Y == earlierY)
+                                .OrderBy(c => c.X)
+                                .Aggregate("", (current, c) => current + c.Sign);
+
+                            var later = segmentCopy.Coordinates
+                                .Where(c => c.Y == laterY)
+                                .OrderBy(c => c.X)
+                                .Aggregate("", (current, c) => current + c.Sign);
+
+                            if (earlier != later)
+                            {
+                                match = false;
+                            }
+                        }
+
+                        if (match)
+                        {
+                            if (y * 100 > comparisonValue)
+                            {
+                                comparisonValue = y * 100;
+                            }
+
                             break;
                         }
-
-                        var earlier = segment.Coordinates
-                            .Where(c => c.Y == earlierY)
-                            .OrderBy(c => c.X)
-                            .Aggregate("", (current, c) => current + c.Sign);
-
-                        var later = segment.Coordinates
-                            .Where(c => c.Y == laterY)
-                            .OrderBy(c => c.X)
-                            .Aggregate("", (current, c) => current + c.Sign);
-
-                        if (earlier != later)
-                        {
-                            match = false;
-                        }
-                    }
-
-                    if (match)
-                    {
-                        value += y * 100;
-                        Console.WriteLine("Match!");
-                        break;
                     }
                 }
             }
         }
     }
+
+    totalValue += comparisonValue;
 }
 
-Console.WriteLine($"Answer: {value}");
+Console.WriteLine($"Answer: {totalValue}");
+return;
+
+// Credit: ChatGPT 3.5
+static int GetDifferingCharPosition(string str1, string str2)
+{
+    if (str1.Length != str2.Length || str1 == str2)
+        return -1; // Strings have different lengths or are identical
+    var differingPosition = -1;
+    for (var i = 0; i < str1.Length; i++)
+    {
+        if (str1[i] == str2[i]) continue;
+        if (differingPosition != -1)
+            return -1; // More than one difference found
+
+        differingPosition = i;
+    }
+
+    return differingPosition;
+}
 
 internal class Segment
 {
