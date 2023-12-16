@@ -43,10 +43,15 @@ void ProcessMovement(int xOriginal, int yOriginal, char directionOriginal)
             return;
         }
 
-        var currentCoordinate = coordinates.First(c => c.x == x && c.y == y);
+        var x1 = x;
+        var y1 = y;
+        var currentCoordinate = coordinates.First(c => c.x == x1 && c.y == y1);
 
 
-        if (values.Any(v => v.x == x && v.y == y && v.direction == direction))
+        var x2 = x;
+        var y2 = y;
+        var direction1 = direction;
+        if (values.Any(v => v.x == x2 && v.y == y2 && v.direction == direction1))
         {
             return;
         }
