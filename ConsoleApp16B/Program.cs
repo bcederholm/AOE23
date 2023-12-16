@@ -3,11 +3,9 @@
  * Author: Benjamin Cederholm
  * Date Created: 2023-12-16
  * Last Modified: 2023-12-16
- * Description: https://adventofcode.com/2023/day/16 - Part One
+ * Description: https://adventofcode.com/2023/day/16 - Part Two
  * Keywords: N/A
  */
-
-using System.Globalization;
 
 var fileLines = File.ReadAllLines("input.txt");
 
@@ -26,40 +24,35 @@ var maxScenarioValue = 0;
 for (var xLoop = 0; xLoop <= coordinates.Max(c => c.x); xLoop++)
 {
     Console.WriteLine($"xLoop: {xLoop} S");
-    ProcessScenerio(xLoop, 0, 'S');
+    ProcessScenario(xLoop, 0, 'S');
     Console.WriteLine($"xLoop: {xLoop} N");
-    ProcessScenerio(xLoop, coordinates.Max(c => c.y), 'N');
+    ProcessScenario(xLoop, coordinates.Max(c => c.y), 'N');
 }
 
 for (var yLoop = 0; yLoop <= coordinates.Max(c => c.y); yLoop++)
 {
     Console.WriteLine($"yLoop: {yLoop} E");
-    ProcessScenerio(yLoop, 0, 'E');
+    ProcessScenario(0, yLoop, 'E');
     Console.WriteLine($"yLoop: {yLoop} W");
-    ProcessScenerio(yLoop, coordinates.Max(c => c.x), 'W');
+    ProcessScenario(coordinates.Max(c => c.x), yLoop, 'W');
 }
 
 List<(int x, int y, char direction)> values;
 
-void ProcessScenerio(int xScenario, int yScenario, char directionScenario)
+Console.WriteLine($"Answer: {maxScenarioValue}");
+return;
+
+void ProcessScenario(int xScenario, int yScenario, char directionScenario)
 {
     values = new List<(int x, int y, char direction)>();
-
     ProcessMovement(xScenario, yScenario, directionScenario);
-
     var distinctValues = values.GroupBy(v => new { v.x, v.y}).Select(vv => new {vv.Key.x, vv.Key.y});
     var totalValue = distinctValues.Count();
-    
-    Console.WriteLine($"totalValue: {totalValue}");
-    
     if (totalValue > maxScenarioValue)
     {
         maxScenarioValue = totalValue;
     }
 }
-
-Console.WriteLine($"Answer: {maxScenarioValue}");
-return;
 
 void ProcessMovement(int xOriginal, int yOriginal, char directionOriginal)
 {
@@ -84,10 +77,8 @@ void ProcessMovement(int xOriginal, int yOriginal, char directionOriginal)
         {
             return;
         }
-        else
-        {
-            values.Add((x, y, direction));
-        }
+
+        values.Add((x, y, direction));
 
         switch (currentCoordinate.sign, direction)
         {

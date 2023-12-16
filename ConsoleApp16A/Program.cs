@@ -7,12 +7,9 @@
  * Keywords: N/A
  */
 
-using System.Globalization;
-
 var fileLines = File.ReadAllLines("input.txt");
 
 var coordinates = new List<(int x, int y, char sign)>();
-
 for (var y = 0; y < fileLines.Length; y++)
 {
     for (var x = 0; x < fileLines[y].Length; x++)
@@ -22,12 +19,10 @@ for (var y = 0; y < fileLines.Length; y++)
 }
 
 var values = new List<(int x, int y, char direction)>();
-
 ProcessMovement(0, 0, 'E');
 
 var distinctValues = values.GroupBy(v => new { v.x, v.y}).Select(vv => new {vv.Key.x, vv.Key.y});
 var totalValue = distinctValues.Count();
-
 
 Console.WriteLine($"Answer: {totalValue}");
 return;
@@ -55,10 +50,8 @@ void ProcessMovement(int xOriginal, int yOriginal, char directionOriginal)
         {
             return;
         }
-        else
-        {
-            values.Add((x, y, direction));
-        }
+
+        values.Add((x, y, direction));
 
         switch (currentCoordinate.sign, direction)
         {

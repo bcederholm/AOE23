@@ -33,12 +33,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="16A">
-      <change afterPath="$PROJECT_DIR$/ConsoleApp16B/ConsoleApp16B.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsoleApp16B/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsoleApp16B/input.txt" afterDir="false" />
+    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AOE23.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AOE23.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp16A/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp16A/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp16B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp16B/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp16B/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp16B/input.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,59 +71,59 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.ConsoleApp1.executor": "Debug",
-    ".NET Project.ConsoleApp10A.executor": "Debug",
-    ".NET Project.ConsoleApp10B.executor": "Debug",
-    ".NET Project.ConsoleApp11A.executor": "Debug",
-    ".NET Project.ConsoleApp11B.executor": "Debug",
-    ".NET Project.ConsoleApp12A.executor": "Debug",
-    ".NET Project.ConsoleApp12B.executor": "Debug",
-    ".NET Project.ConsoleApp13A.executor": "Debug",
-    ".NET Project.ConsoleApp13B.executor": "Debug",
-    ".NET Project.ConsoleApp14A.executor": "Debug",
-    ".NET Project.ConsoleApp14B.executor": "Debug",
-    ".NET Project.ConsoleApp15A.executor": "Debug",
-    ".NET Project.ConsoleApp16A.executor": "Debug",
-    ".NET Project.ConsoleApp16B.executor": "Debug",
-    ".NET Project.ConsoleApp2.executor": "Debug",
-    ".NET Project.ConsoleApp3.executor": "Debug",
-    ".NET Project.ConsoleApp3B.executor": "Debug",
-    ".NET Project.ConsoleApp4A.executor": "Debug",
-    ".NET Project.ConsoleApp4B.executor": "Debug",
-    ".NET Project.ConsoleApp5A.executor": "Debug",
-    ".NET Project.ConsoleApp5B.executor": "Debug",
-    ".NET Project.ConsoleApp6A.executor": "Debug",
-    ".NET Project.ConsoleApp7A.executor": "Debug",
-    ".NET Project.ConsoleApp7B.executor": "Debug",
-    ".NET Project.ConsoleApp8A.executor": "Debug",
-    ".NET Project.ConsoleApp8B.executor": "Debug",
-    ".NET Project.ConsoleApp9A.executor": "Debug",
-    ".NET Project.ConsoleApp9B.executor": "Debug",
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "XThreadsFramesViewSplitterKey": "0.25559703",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.ConsoleApp1.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp10A.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp10B.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp11A.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp11B.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp12A.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp12B.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp13A.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp13B.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp14A.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp14B.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp15A.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp16A.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp16B.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.ConsoleApp2.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp3.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp3B.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp4A.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp4B.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp5A.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp5B.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp6A.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp7A.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp7B.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp8A.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp8B.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp9A.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ConsoleApp9B.executor&quot;: &quot;Debug&quot;,
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.25559703&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\Benjamin\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Benjamin\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\Benjamin\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Benjamin\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Benjamin\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Benjamin\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Project.ConsoleApp16B">
     <configuration name="ConsoleApp1" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="" />
