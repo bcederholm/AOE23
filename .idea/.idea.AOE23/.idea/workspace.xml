@@ -13,6 +13,7 @@
     <projectFile>ConsoleApp15A/ConsoleApp15A.csproj</projectFile>
     <projectFile>ConsoleApp15B/ConsoleApp15B.csproj</projectFile>
     <projectFile>ConsoleApp16A/ConsoleApp16A.csproj</projectFile>
+    <projectFile>ConsoleApp16B/ConsoleApp16B.csproj</projectFile>
     <projectFile>ConsoleApp2/ConsoleApp2.csproj</projectFile>
     <projectFile>ConsoleApp3/ConsoleApp3.csproj</projectFile>
     <projectFile>ConsoleApp3B/ConsoleApp3B.csproj</projectFile>
@@ -32,17 +33,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ConsoleApp16A/ConsoleApp16A.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsoleApp16A/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsoleApp16A/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" />
+    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="16A">
+      <change afterPath="$PROJECT_DIR$/ConsoleApp16B/ConsoleApp16B.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsoleApp16B/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsoleApp16B/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AOE23.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AOE23.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp13B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp13B/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp14B/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp14B/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp15B/ConsoleApp15B.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp15B/ConsoleApp15B.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp15B/Dockerfile" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +87,7 @@
     ".NET Project.ConsoleApp14B.executor": "Debug",
     ".NET Project.ConsoleApp15A.executor": "Debug",
     ".NET Project.ConsoleApp16A.executor": "Debug",
+    ".NET Project.ConsoleApp16B.executor": "Debug",
     ".NET Project.ConsoleApp2.executor": "Debug",
     ".NET Project.ConsoleApp3.executor": "Debug",
     ".NET Project.ConsoleApp3B.executor": "Debug",
@@ -128,7 +125,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.ConsoleApp16A">
+  <component name="RunManager" selected=".NET Project.ConsoleApp16B">
     <configuration name="ConsoleApp1" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -372,6 +369,24 @@
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/ConsoleApp16A/ConsoleApp16A.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="ConsoleApp16B" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ConsoleApp16B/ConsoleApp16B.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -720,7 +735,7 @@
       <workItem from="1702565007217" duration="276000" />
       <workItem from="1702650092070" duration="1904000" />
       <workItem from="1702653114737" duration="606000" />
-      <workItem from="1702706947013" duration="7594000" />
+      <workItem from="1702706947013" duration="12065000" />
     </task>
     <task id="LOCAL−00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -967,7 +982,14 @@
       <option name="presentableId" value="LOCAL−00035" />
       <updated>1702676166306</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL−00036" summary="16A">
+      <option name="closed" value="true" />
+      <created>1702714775966</created>
+      <option name="number" value="LOCAL−00036" />
+      <option name="presentableId" value="LOCAL−00036" />
+      <updated>1702714775966</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1000,7 +1022,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="A03B inspected" />
     <MESSAGE value="A04A inspected" />
     <MESSAGE value="A04B inspected" />
     <MESSAGE value="A05A inspected" />
@@ -1025,7 +1046,8 @@
     <MESSAGE value="14B WIP" />
     <MESSAGE value="15A" />
     <MESSAGE value="15B" />
-    <option name="LAST_COMMIT_MESSAGE" value="15B" />
+    <MESSAGE value="16A" />
+    <option name="LAST_COMMIT_MESSAGE" value="16A" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1042,19 +1064,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ConsoleApp16A/Program.cs</url>
-          <line>28</line>
-          <properties documentPath="C:\repos\AOE23\ConsoleApp16A\Program.cs" initialLine="27" containingFunctionPresentation="">
-            <startOffsets>
-              <option value="681" />
-            </startOffsets>
-            <endOffsets>
-              <option value="698" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="81" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
