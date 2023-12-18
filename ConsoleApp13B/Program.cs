@@ -104,66 +104,81 @@ foreach (var segment in segments)
                     break;
                 }
             }
+
+            int y;
             
-            var yValuesForComparison = segmentCopy.Coordinates.Select(c => c.Y).Distinct().ToArray();
-            foreach (var y in yValuesForComparison)
+            var linesBetween = c.y2 - c.y1 - 1;
+            if (linesBetween == 1)
             {
-                if (y > 0)
+                continue;
+            }
+            var mod = linesBetween % 2;
+            if (mod > 0)
+            {
+                continue;
+            }
+            y = c.y2 - linesBetween / 2;
+
+            if (y > 0)
+            {
+                var earlierY = y - 1;
+                var laterY = y;
+                var firstLine = segmentCopy.Coordinates
+                    .Where(c => c.Y == earlierY)
+                    .OrderBy(c => c.X)
+                    .Aggregate("", (current, c) => current + c.Sign);
+
+                var secondLine = segmentCopy.Coordinates
+                    .Where(c => c.Y == laterY)
+                    .OrderBy(c => c.X)
+                    .Aggregate("", (current, c) => current + c.Sign);
+
+                if (firstLine == secondLine)
                 {
-                    var earlierY = y - 1;
-                    var laterY = y;
-                    var firstLine = segmentCopy.Coordinates
-                        .Where(c => c.Y == earlierY)
-                        .OrderBy(c => c.X)
-                        .Aggregate("", (current, c) => current + c.Sign);
-
-                    var secondLine = segmentCopy.Coordinates
-                        .Where(c => c.Y == laterY)
-                        .OrderBy(c => c.X)
-                        .Aggregate("", (current, c) => current + c.Sign);
-
-                    if (firstLine == secondLine)
+                    var match = true;
+                    while (match)
                     {
-                        var match = true;
-                        while (match)
+                        earlierY--;
+                        laterY++;
+
+                        if (earlierY < 0 || laterY > segmentCopy.Coordinates.Max(c => c.Y))
                         {
-                            earlierY--;
-                            laterY++;
-
-                            if (earlierY < 0 || laterY > segmentCopy.Coordinates.Max(c => c.Y))
-                            {
-                                break;
-                            }
-
-                            var earlier = segmentCopy.Coordinates
-                                .Where(c => c.Y == earlierY)
-                                .OrderBy(c => c.X)
-                                .Aggregate("", (current, c) => current + c.Sign);
-
-                            var later = segmentCopy.Coordinates
-                                .Where(c => c.Y == laterY)
-                                .OrderBy(c => c.X)
-                                .Aggregate("", (current, c) => current + c.Sign);
-
-                            if (earlier != later)
-                            {
-                                match = false;
-                            }
-                        }
-
-                        if (match)
-                        {
-                            if (y * 100 > comparisonValue)
-                            {
-                                comparisonValue = y * 100;
-                            }
-
                             break;
                         }
+
+                        var earlier = segmentCopy.Coordinates
+                            .Where(c => c.Y == earlierY)
+                            .OrderBy(c => c.X)
+                            .Aggregate("", (current, c) => current + c.Sign);
+
+                        var later = segmentCopy.Coordinates
+                            .Where(c => c.Y == laterY)
+                            .OrderBy(c => c.X)
+                            .Aggregate("", (current, c) => current + c.Sign);
+
+                        if (earlier != later)
+                        {
+                            match = false;
+                        }
+                    }
+
+                    if (match)
+                    {
+                        if (y * 100 > comparisonValue)
+                        {
+                            comparisonValue = y * 100;
+                            Console.WriteLine($"comparisonValue: {comparisonValue}");
+                        }
+
+                        break;
                     }
                 }
             }
         }
+    }
+    if (comparisonValue == 0)
+    {
+        Console.WriteLine($"NOT FOUND: {segment.Id}");
     }
 
     totalValue += comparisonValue;
