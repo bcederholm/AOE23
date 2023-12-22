@@ -3,34 +3,35 @@
  * Author: Benjamin Cederholm
  * Date Created: 2023-12-18
  * Last Modified: 2023-12-18
- * Description: https://adventofcode.com/2023/day/18 - Part One
- * Keywords: Shoelace formula
+ * Description: https://adventofcode.com/2023/day/18 - Part Two
+ * Keywords: Double
  */
 
 var fileLines = File.ReadAllLines("input.txt");
 
 var coordinates = new List<Point>();
-var currentCoordinate = (x: 0, y: 0);
+(double x, double y) currentCoordinate = (x: 0, y: 0);
 coordinates.Add(new Point(currentCoordinate.x, currentCoordinate.y ));
-var totalDistance = 0;
+double totalDistance = 0;
 foreach (var line in fileLines)
 {
     var splitLine = line.Split(' ');
 
-    var direction = splitLine[0][0];
-    var distance = int.Parse(splitLine[1]);
+    var direction = splitLine[2][7];
+    
+    var distance = int.Parse(splitLine[2].Substring(2,5),System.Globalization.NumberStyles.HexNumber);
     switch (direction)
     {
-        case 'R':
+        case '0':
             currentCoordinate.x += distance;
             break;
-        case 'L':
+        case '2':
             currentCoordinate.x -= distance;
             break;
-        case 'D':
+        case '1':
             currentCoordinate.y += distance;
             break;
-        case 'U':
+        case '3':
             currentCoordinate.y -= distance;
             break;
 
@@ -41,14 +42,14 @@ foreach (var line in fileLines)
 
 var polygon = new Polygon(coordinates);
 var area = polygon.CalculateArea();
-Console.WriteLine($"Answer: {area + 1 + (double)totalDistance / 2}"); // Reddit hint: https://www.reddit.com/r/adventofcode/comments/18l0qtr/2023_day_18_solutions/
+Console.WriteLine($"Answer: {area + 1 + totalDistance / 2}");
 
 internal class Point
 {
-    public int X { get; }
-    public int Y { get; }
+    public double X { get; }
+    public double Y { get; }
 
-    public Point(int x, int y)
+    public Point(double x, double y)
     {
         X = x;
         Y = y;
