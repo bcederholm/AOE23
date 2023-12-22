@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "2r+hxg0zg3CmonoLEN0RiPLNpq+A1Tc6TjU8tGvdp15IXB0o6a/zzmiaoXW5a9NN0CqEV9bcnG4glSAs8HuPsw==",
+  "dgSpecHash": "2TJtSUO9wUOXS8W3udtfTRE6Y1+28OQUVhz9ppT7NE1ix8zFUBE6Ym8FoaucGKjxFBYf1bIu1VeWujGmgSq5Rw==",
   "success": true,
   "projectFilePath": "C:\\repos\\AOE23\\ConsoleApp03B\\ConsoleApp03B.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Benjamin\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\Benjamin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\Benjamin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\Benjamin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
+  ],
   "logs": []
 }
