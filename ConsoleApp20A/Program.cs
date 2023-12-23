@@ -4,7 +4,7 @@
  * Date Created: 2023-12-20
  * Last Modified: 2023-12-22
  * Description: https://adventofcode.com/2023/day/20 - Part One
- * Keywords: Queue/Level
+ * Keywords: Queue (level order prio 1, FIFO prio 2
  */
 
 var fileLines = File.ReadAllLines("input.txt");
