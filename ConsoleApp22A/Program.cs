@@ -4,7 +4,7 @@
  * Date Created: 2023-12-24
  * Last Modified: 2023-12-24
  * Description: https://adventofcode.com/2023/day/2A - Part One
- * Keywords: LINQ
+ * Keywords: LINQ, 3D
  */
 
 var fileLines = File.ReadAllLines("input.txt");
@@ -95,9 +95,7 @@ foreach (var brick in bricks)
 	}
 }
 
-
 Console.WriteLine($"Answer: {bricksCanBeDisintegrated}");
-
 
 internal class Brick(int x1, int y1, int z1, int x2, int y2, int z2, char character)
 {
