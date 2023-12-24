@@ -20,6 +20,7 @@
     <projectFile>ConsoleApp2/ConsoleApp2.csproj</projectFile>
     <projectFile>ConsoleApp20A/ConsoleApp20A.csproj</projectFile>
     <projectFile>ConsoleApp20B/ConsoleApp20B.csproj</projectFile>
+    <projectFile>ConsoleApp22A/ConsoleApp22A.csproj</projectFile>
     <projectFile>ConsoleApp23A/ConsoleApp23A.csproj</projectFile>
     <projectFile>ConsoleApp23B/ConsoleApp23B.csproj</projectFile>
     <projectFile>ConsoleApp24A/ConsoleApp24A.csproj</projectFile>
@@ -43,10 +44,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="23B">
-      <change afterPath="$PROJECT_DIR$/ConsoleApp24A/ConsoleApp24A.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsoleApp24A/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsoleApp24A/input.txt" afterDir="false" />
+    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="24A WIP">
+      <change afterPath="$PROJECT_DIR$/ConsoleApp22A/ConsoleApp22A.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsoleApp22A/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsoleApp22A/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AOE23.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AOE23.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +65,9 @@
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/5535e31a712343a63f5d7d796cd874e563e5ac14/src/libraries/System.Linq/src/System/Linq/Select.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/767db1e17d404f86c3c73c54c6b20b5ff9ec43b79ef47681ae34b40a6852cf9/Where.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/97892987fb2a9bc79b06cbf7fbedf98a5ef75c6a588983bbc038064cfaba/Select.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b2c3e28468b2a9ae5485968818c48fd40338a6b8ae1295f29a355225a8d238/First.cs" root0="SKIP_HIGHLIGHTING" />
@@ -111,8 +116,10 @@
     ".NET Project.ConsoleApp2.executor": "Debug",
     ".NET Project.ConsoleApp20A.executor": "Debug",
     ".NET Project.ConsoleApp20B.executor": "Debug",
+    ".NET Project.ConsoleApp22A.executor": "Debug",
     ".NET Project.ConsoleApp23A.executor": "Debug",
     ".NET Project.ConsoleApp23B.executor": "Debug",
+    ".NET Project.ConsoleApp24A.executor": "Debug",
     ".NET Project.ConsoleApp3.executor": "Debug",
     ".NET Project.ConsoleApp3B.executor": "Debug",
     ".NET Project.ConsoleApp4A.executor": "Debug",
@@ -150,7 +157,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.ConsoleApp24A">
+  <component name="RunManager" selected=".NET Project.ConsoleApp22A">
     <configuration name="ConsoleApp1" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -520,6 +527,24 @@
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/ConsoleApp20B/ConsoleApp20B.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="ConsoleApp22A" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ConsoleApp22A/ConsoleApp22A.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -952,7 +977,7 @@
       <workItem from="1703260420245" duration="644000" />
       <workItem from="1703273438548" duration="8542000" />
       <workItem from="1703283724356" duration="4586000" />
-      <workItem from="1703316755442" duration="31116000" />
+      <workItem from="1703316755442" duration="42081000" />
     </task>
     <task id="LOCAL−00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -1255,7 +1280,14 @@
       <option name="presentableId" value="LOCAL−00043" />
       <updated>1703393394427</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL−00044" summary="24A WIP">
+      <option name="closed" value="true" />
+      <created>1703422786121</created>
+      <option name="number" value="LOCAL−00044" />
+      <option name="presentableId" value="LOCAL−00044" />
+      <updated>1703422786121</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1288,7 +1320,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="A07B inspected" />
     <MESSAGE value="11" />
     <MESSAGE value="08A inspected" />
     <MESSAGE value="Inspect 98B" />
@@ -1313,7 +1344,8 @@
     <MESSAGE value="20B" />
     <MESSAGE value="23A" />
     <MESSAGE value="23B" />
-    <option name="LAST_COMMIT_MESSAGE" value="23B" />
+    <MESSAGE value="24A WIP" />
+    <option name="LAST_COMMIT_MESSAGE" value="24A WIP" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1335,11 +1367,8 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="DotNetProject">
-        <watch expression="new System.Collections.Generic.ICollectionDebugView&lt;System.ValueTuple&lt;int, int, char&gt;&gt;(CS$&lt;&gt;8__locals0.values).Items[1]" />
-        <watch expression="matrix.First(m =&gt; m.X == 21 &amp;&amp; m.Y == 11)" language="C#" />
-        <watch expression="maxMatrix.First(m =&gt; m.X == 21 &amp;&amp; m.Y == 11)" language="C#" />
-        <watch expression="matrixClone.First(m =&gt; m.X == 21 &amp;&amp; m.Y == 11)" language="C#" />
-        <watch expression="tempMatrix.First(m =&gt; m.X == 21 &amp;&amp; m.Y == 11)" language="C#" />
+        <watch expression="brick.GetCoordinates()" language="C#" />
+        <watch expression="bricks.Where(b =&gt; b != brick).Select(b =&gt; b.GetCoordinates())" language="C#" />
       </configuration>
     </watches-manager>
   </component>
