@@ -3,8 +3,8 @@
  * Author: Benjamin Cederholm
  * Date Created: 2023-12-23
  * Last Modified: 2023-12-23
- * Description: https://adventofcode.com/2023/day/23 - Part One
- * Keywords: is pattern, recursive, MemberwiseClone
+ * Description: https://adventofcode.com/2023/day/23 - Part Two
+ * Keywords: N/A *** NOT SOLVED TO SLOW ***
  */
 
 var fileLines = File.ReadAllLines("input.txt");
@@ -23,16 +23,16 @@ for (var y = 0; y < fileLines.Length; y++)
 				matrixBase.Add(new Coordinate(x, y, Sign.Wall));
 				break;
 			case '^':
-				matrixBase.Add(new Coordinate(x, y, Sign.NorthSlope));
+				matrixBase.Add(new Coordinate(x, y, Sign.Empty));
 				break;
 			case '>':
-				matrixBase.Add(new Coordinate(x, y, Sign.EastSlope));
+				matrixBase.Add(new Coordinate(x, y, Sign.Empty));
 				break;
 			case 'v':
-				matrixBase.Add(new Coordinate(x, y, Sign.SouthSlope));
+				matrixBase.Add(new Coordinate(x, y, Sign.Empty));
 				break;
 			case '<':
-				matrixBase.Add(new Coordinate(x, y, Sign.WestSlope));
+				matrixBase.Add(new Coordinate(x, y, Sign.Empty));
 				break;
 		}
 	}
@@ -42,7 +42,6 @@ matrixBase.First(c => c.Y == fileLines.Length - 1 & c.Sign == Sign.Empty).Sign =
 
 var startPosition = matrixBase.First(c => c.Sign == Sign.Start);
 startPosition.Visited = true;
-
 var longestRoute = Walk(startPosition.X, startPosition.Y, Directions.South, matrixBase);
 Console.WriteLine($"Answer: {longestRoute.Item1}");
 return;
@@ -184,7 +183,7 @@ return;
 		switch (alternatives.Count)
 		{
 			case 0:
-				Console.WriteLine("No alternatives found, going back");
+				// Console.WriteLine("No alternatives found, going back");
 				return (-1, new List<Coordinate>());
 			case 1:
 				currentPosition = alternatives.First().coordinate;
@@ -196,12 +195,10 @@ return;
 				var maxMatrix = new List<Coordinate>();
 				foreach (var alternative in alternatives)
 				{
-					Console.WriteLine($"Alternative: {alternative.coordinate.X}, {alternative.coordinate.Y}, {alternative.direction}");
-					
 					var matrixClone = matrix.Select(c => c.Clone()).ToList();
-					
 					var (tempSteps, tempMatrix) = Walk(alternative.coordinate.X, alternative.coordinate.Y, alternative.direction, matrixClone);
 					if (tempSteps <= maxSteps) continue;
+					// Console.WriteLine($"Current {currentPosition.X} {currentPosition.Y} -> Alternative {alternative.coordinate.X}, {alternative.coordinate.Y}, {alternative.direction}: {tempSteps} steps");
 					maxSteps = tempSteps;
 					maxMatrix = tempMatrix;
 				}
