@@ -3,7 +3,6 @@ C:\repos\AOE23\ConsoleApp10B\bin\Debug\net6.0\ConsoleApp10B.deps.json
 C:\repos\AOE23\ConsoleApp10B\bin\Debug\net6.0\ConsoleApp10B.runtimeconfig.json
 C:\repos\AOE23\ConsoleApp10B\bin\Debug\net6.0\ConsoleApp10B.dll
 C:\repos\AOE23\ConsoleApp10B\bin\Debug\net6.0\ConsoleApp10B.pdb
-C:\repos\AOE23\ConsoleApp10B\obj\Debug\net6.0\ConsoleApp10B.csproj.AssemblyReference.cache
 C:\repos\AOE23\ConsoleApp10B\obj\Debug\net6.0\ConsoleApp10B.GeneratedMSBuildEditorConfig.editorconfig
 C:\repos\AOE23\ConsoleApp10B\obj\Debug\net6.0\ConsoleApp10B.AssemblyInfoInputs.cache
 C:\repos\AOE23\ConsoleApp10B\obj\Debug\net6.0\ConsoleApp10B.AssemblyInfo.cs
@@ -14,3 +13,4 @@ C:\repos\AOE23\ConsoleApp10B\obj\Debug\net6.0\ConsoleApp10B.pdb
 C:\repos\AOE23\ConsoleApp10B\obj\Debug\net6.0\ConsoleApp10B.genruntimeconfig.cache
 C:\repos\AOE23\ConsoleApp10B\obj\Debug\net6.0\ref\ConsoleApp10B.dll
 C:\repos\AOE23\ConsoleApp10B\bin\Debug\net6.0\input.txt
+C:\repos\AOE23\ConsoleApp10B\obj\Debug\net6.0\ConsoleApp10B.sourcelink.json
