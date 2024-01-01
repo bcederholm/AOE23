@@ -18,6 +18,7 @@
     <projectFile>ConsoleApp18A/ConsoleApp18A.csproj</projectFile>
     <projectFile>ConsoleApp18B/ConsoleApp18B.csproj</projectFile>
     <projectFile>ConsoleApp19A/ConsoleApp19A.csproj</projectFile>
+    <projectFile>ConsoleApp19B/ConsoleApp19B.csproj</projectFile>
     <projectFile>ConsoleApp2/ConsoleApp2.csproj</projectFile>
     <projectFile>ConsoleApp20A/ConsoleApp20A.csproj</projectFile>
     <projectFile>ConsoleApp20B/ConsoleApp20B.csproj</projectFile>
@@ -46,12 +47,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="25A WIP">
-      <change afterPath="$PROJECT_DIR$/ConsoleApp19A/ConsoleApp19A.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsoleApp19A/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsoleApp19A/input.txt" afterDir="false" />
+    <list default="true" id="0c813a07-c729-4dbd-9467-49896b9ad8b2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ConsoleApp19B/ConsoleApp19B.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsoleApp19B/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsoleApp19B/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AOE23/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AOE23.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AOE23.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp19A/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp19A/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +111,7 @@
     ".NET Project.ConsoleApp18A.executor": "Debug",
     ".NET Project.ConsoleApp18B.executor": "Debug",
     ".NET Project.ConsoleApp19A.executor": "Debug",
+    ".NET Project.ConsoleApp19B.executor": "Debug",
     ".NET Project.ConsoleApp2.executor": "Debug",
     ".NET Project.ConsoleApp20A.executor": "Debug",
     ".NET Project.ConsoleApp20B.executor": "Debug",
@@ -154,7 +157,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.ConsoleApp19A">
+  <component name="RunManager" selected=".NET Project.ConsoleApp19B">
     <configuration name="ConsoleApp1" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -488,6 +491,24 @@
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/ConsoleApp19A/ConsoleApp19A.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="ConsoleApp19B" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ConsoleApp19B/ConsoleApp19B.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -1015,7 +1036,9 @@
       <workItem from="1703492516668" duration="10954000" />
       <workItem from="1703608661531" duration="7188000" />
       <workItem from="1703700308125" duration="4970000" />
-      <workItem from="1704030844771" duration="11933000" />
+      <workItem from="1704030844771" duration="22614000" />
+      <workItem from="1704064773268" duration="444000" />
+      <workItem from="1704065232359" duration="12967000" />
     </task>
     <task id="LOCAL−00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -1346,7 +1369,14 @@
       <option name="presentableId" value="LOCAL−00047" />
       <updated>1704030878069</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL−00048" summary="19A">
+      <option name="closed" value="true" />
+      <created>1704054175749</created>
+      <option name="number" value="LOCAL−00048" />
+      <option name="presentableId" value="LOCAL−00048" />
+      <updated>1704054175749</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1379,7 +1409,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Inspect 98B" />
     <MESSAGE value="Inspect 09A" />
     <MESSAGE value="Inspect 09B" />
     <MESSAGE value="Inspect 10A" />
@@ -1404,7 +1433,8 @@
     <MESSAGE value="24A WIP" />
     <MESSAGE value="22A" />
     <MESSAGE value="25A WIP" />
-    <option name="LAST_COMMIT_MESSAGE" value="25A WIP" />
+    <MESSAGE value="19A" />
+    <option name="LAST_COMMIT_MESSAGE" value="19A" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

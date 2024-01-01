@@ -85,7 +85,7 @@ char ProcessWorkFlow(Part part, Workflow workflow)
 					return rule.DestinationWorkFlow switch
 					{
 						"A" => 'A',
-						"R" => 'B',
+						"R" => 'R',
 						_ => ProcessWorkFlow(part, workflows.First(w => w.Name == rule.DestinationWorkFlow))
 					};
 				}
@@ -97,7 +97,7 @@ char ProcessWorkFlow(Part part, Workflow workflow)
 					return rule.DestinationWorkFlow switch
 					{
 						"A" => 'A',
-						"R" => 'B',
+						"R" => 'R',
 						_ => ProcessWorkFlow(part, workflows.First(w => w.Name == rule.DestinationWorkFlow))
 					};
 				}
@@ -108,7 +108,7 @@ char ProcessWorkFlow(Part part, Workflow workflow)
 	return workflow.NoRuleWorkFlow switch
 	{
 		"A" => 'A',
-		"R" => 'B',
+		"R" => 'R',
 		_ => ProcessWorkFlow(part, workflows.First(w => w.Name == workflow.NoRuleWorkFlow))
 	};
 }
